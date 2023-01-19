@@ -2110,6 +2110,10 @@ html, body {
   display: block;
 }
 
+.catalog .product-link {
+  position: relative;
+}
+
 .catalog .product {
   width: 100%;
   max-width: 31.3%;
