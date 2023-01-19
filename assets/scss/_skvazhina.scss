@@ -1,0 +1,157 @@
+.v-headbaner{
+	margin-top: 20px;
+	display: flex;
+	padding: 80px 0;
+	&-block{
+		max-width: 640px;
+		width: 100%;
+		background-color: rgba(45, 45, 45, 0.9);
+		padding: 50px;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		&-text{
+			@include fonts($roboto, 16px, 400, 24px, $white);
+		}
+	}
+}
+
+.textblock-wrap{
+	margin-top: 50px;
+	padding: 80px 50px;
+	border-radius: 10px;
+	&-container{
+		display: flex;
+		gap: 20px;
+		justify-content: space-between;
+		&-list{
+			margin-top: 60px;
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			&-item{
+				max-width: 505px;
+				width: 100%;
+				background-color: $light_blue;
+				overflow: hidden;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 0 0 0 30px;
+				border-radius: 10px;
+				&-text{
+					display: flex;
+					flex-direction: column;
+					gap: 5px;
+					max-width: 230px;
+					&-name{
+						@include fonts($roboto, 20px, 700, 26px, $white);
+					}
+					&-price{
+						@include fonts($roboto, 18px, 400, 23px, $white);
+					}
+				}
+			}
+			&-img{
+				max-width: 211px;
+				img{
+					width: 211px;
+					height: 123px;
+					display: block;
+					object-fit: cover;
+					object-position: center;
+				}
+			}
+		}
+	}
+	&-block{
+		margin-top: 20px;
+		border-radius: 10px;
+		padding: 20px;
+		background-color: $white;
+		&-title{
+			@include fonts($roboto, 20px, 700, 26px, $dark_gray);
+			margin-bottom: 10px;
+		}
+	}
+	&-btn{
+		display: flex;
+		justify-content: center;
+		margin-top: 50px;
+	}
+}
+.consultant__btn{
+	cursor: pointer;
+	background-color: $paginat;
+	border-radius: 5px;
+	border: none;
+	padding: 20px 40px;
+	@include fonts($roboto, 16px, 700, 16px, $white);
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.form-button{
+	cursor: pointer;
+	background-color: $paginat;
+	border-radius: 5px;
+	padding: 20px 40px;
+	border: none;
+	@include fonts($roboto, 16px, 700, 16px, $white);
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	}
+.textblock-wrap-container:nth-last-child(2){
+	flex-direction: row-reverse;
+	margin-top: 30px;
+	.textblock-wrap-container-list{
+		margin-top: 0;
+	}
+	.textblock-wrap-container-list-item{
+		flex-direction: row-reverse;
+		padding-left: 0;
+		padding-right: 30px;
+	}
+}
+.textblock-wrap-container-block{
+	max-width: 591px;
+	width: 100%;
+}
+.map{
+	margin-top: 80px;
+}
+.ingener{
+	margin: 50px auto 0;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	max-width: 460px;
+	width: 100%;
+	background-color: $light_blue;
+	border-radius: 10px;
+	padding: 30px;
+	#ingener_name,
+	#name,
+	#tel{
+		padding: 14px 20px;
+		border: none;
+		border-radius: 5px;
+	}
+	#ingener_name::placeholder,
+	#name::placeholder,
+	#tel::placeholder{
+		@include fonts($roboto, 16px, 400, 21px, $inputplaceholder);
+	}
+	.textblock-wrap-btn-but{
+		border: none;
+	}
+}
+#map{
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+	height: 500px;
+}

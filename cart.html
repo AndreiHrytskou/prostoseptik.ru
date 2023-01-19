@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru-ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./assets/css/fonts/fonts.css">
+	<link rel="stylesheet" href="./assets/css/swiper.css">
+	<link rel="stylesheet" href="./assets/css/styles.css">
+	<link rel="shortcut icon" href="./assets/img/favicon/favicon.ico" type="image/x-icon">
+	<script src="./assets/js/menu.js" defer></script>
+	<script src="./assets/js/burger.js" defer></script>
+	<script src="./assets/js/swiper.js" defer></script>
+	<script src="./assets/js/firstswiper.js" defer></script>
+	<script src="./assets/js/search.js" defer></script>
+	<title>Cart</title>
+</head>
+
+<body>
+	<div class="wrapper header__container">
+		<div class="container">
+			<header class="header container__screen">
+				<div class="header__logo">
+					<a class='header__logo-link' href="./index.html">
+						<img class="logo header__logo-img" src="./assets/img/logo.png" alt="logo">
+					</a>
+				</div>
+				<div class="header__menu">
+					<div class="header__menu-list">
+						<a href="./catalog.html" class="header__menu-list-item">Каталог септиков</a>
+						<div class="header__menu-list-item water">
+							<span>
+								Водоснабжение
+								<img class="arrow-down" src="./assets/img/arrow-down-bold.png" alt="arrow-down-bold">
+								<img class="arrow-up" src="./assets/img/arrow.png" alt="arrow">
+							</span>
+							<ul class="water-list">
+								<li><a href="./skvazhina.html" class="water__hide-link">Скважина на воду</a></li>
+								<li><a href="./kolodec.html" class="water__hide-link">Колодец для дома</a></li>
+								<li><a href="./zavodvody.html" class="water__hide-link">Завод воды в дом</a></li>
+							</ul>
+						</div>
+						<div class="header__menu-list-item portfolio">
+							<span>
+								Портфолио
+								<img class="arrow-down" src="./assets/img/arrow-down-bold.png" alt="arrow-down-bold">
+								<img class="arrow-up" src="./assets/img/arrow.png" alt="arrow">
+							</span>
+							<ul class="portfolio-list">
+								<li><a href="./foto.html" class="water__hide-link">Фото</a></li>
+								<li><a href="./video.html" class="water__hide-link">Видео</a></li>
+							</ul>
+						</div>
+						<a href="./contacts.html" class="header__menu-list-item">Контакты</a>
+						<a href="./news.html" class="header__menu-list-item">Новости</a>
+						<div class="footer__contacts-social-list">
+							<a href="#" class="footer__contacts-social-list-item"><img
+									class="footer__contacts-social-list-item-img" src="./assets/img/cib_vk.png" alt="vk">
+							</a>
+							<a href="#" class="footer__contacts-social-list-item"><img
+									class="footer__contacts-social-list-item-img" src="./assets/img/Yandex_Zen_logo1.png"
+									alt="Yandex_Zen_logo">
+							</a>
+							<a href="#" class="footer__contacts-social-list-item"><img
+									class="footer__contacts-social-list-item-img" src="./assets/img/fa_youtube-square.png"
+									alt="youtube">
+							</a>
+							<a href="#" class="footer__contacts-social-list-item"><img
+									class="footer__contacts-social-list-item-img" src="./assets/img/rutubelogo.png" alt="rutube">
+							</a>
+						</div>
+						<div class="header__menu-discount">
+							<img class="header__menu-discount-img" src="./assets/img/Frame4.png" alt="discount_img">
+							<p class="header__menu-discount-text">Скидка 10%</p>
+						</div>
+					</div>
+					<button class="header__menu-search">
+						<img class="header__menu-search-img" src="./assets/img/bx_search.png" alt="search_img">
+					</button>
+					<div class="search">
+						<input class="search-input" type="search" name="search" id="search" placeholder="Поиск">
+						<img class="search-img" src="./assets/img/search.png" alt="search">
+					</div>
+					<button class="header__menu-cart">
+						<img class="header__menu-cart-img" src="./assets/img/Cart.png" alt="cart_img">
+						<span class="header__menu-cart-count"></span>
+					</button>
+					<a href="#" class="burger">
+						<span></span>
+					</a>
+				</div>
+			</header>
+			<div class="cart-modal">
+				<p class="title">Корзина</p>
+				<div class="cart-wrap-block">
+					<div class="product-thumbnail">
+						<a href="#"><img class="product-thumbnail-img" src="./assets/img/Rectangle154.webp" alt="Rectangle"></a>
+					</div>
+					<div class="cart-wrap-block-name">
+						<span class="product-name"><a href="./single-product.html">Септик Евролос Эко 3</a></span>
+						<span class="product-price">156 525 ₽</span>
+					</div>
+					<div class="product-quantity">
+						<span class="minus">-</span>
+						<input id="1" type="number" class="quantity" value="1">
+						<span class="plus">+</span>
+					</div>
+					<button class="remove">&times;</button>
+				</div>
+				<div class="order-total">
+					<div>К оплате:&nbsp;</div>
+					<div data-title="Total"><strong><span class="woocommerce-Price-amount amount">556320,00
+								₽</span></strong></div>
+				</div>
+				<a href="./cart.html" class="continue">Продолжить</a>
+				<a href="#" class="back">
+					<img src="./assets/img/bi_arrow-left-short.png" alt="bi_arrow-left-short">вернуться назад
+				</a>
+			</div>
+		</div>
+		<div class="water__hide">
+			<div class="water__hide-menu">
+				<div class="water__hide-menu-item" style="background-image: url('./assets/img/image8.webp')">
+					<p class="water__hide-menu-item-title">Скважина на воду</p>
+					<a href="./skvazhina.html" class="water__hide-link"><span>Перейти</span></a>
+				</div>
+				<div class="water__hide-menu-item" style="background-image: url('./assets/img/image9.webp')">
+					<p class="water__hide-menu-item-title">Колодец для дома</p>
+					<a href="./kolodec.html" class="water__hide-link"><span>Перейти</span></a>
+				</div>
+				<div class="water__hide-menu-item" style="background-image: url('./assets/img/image10.webp')">
+					<p class="water__hide-menu-item-title">Завод воды в дом</p>
+					<a href="./zavodvody.html" class="water__hide-link"><span>Перейти</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio__hide">
+			<div class="portfolio__hide-menu">
+				<div class="portfolio__hide-menu-item" style="background-image: url('./assets/img/image.webp')">
+					<p class="water__hide-menu-item-title">фото</p>
+					<a href="./foto.html" class="water__hide-link"><span>Перейти</span></a>
+				</div>
+				<div class="portfolio__hide-menu-item" style="background-image: url('./assets/img/image2.webp')">
+					<p class="water__hide-menu-item-title">Видео</p>
+					<a href="./video.html" class="water__hide-link"><span>Перейти</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end header-->
+
+<main class="main">
+<div class="wrapper">
+	<div class="container">
+		<form class="cart" action="#" method="post">
+			<h1 class="page-title cart-title">Оформление заказа</h1>
+			<div class="cart-wrap">
+				<p class="title center">Ваш заказ</p>
+				<div class="cart-wrap-table">
+					<div>
+						<div class="cart-wrap-block">
+							<div class="product-thumbnail">
+								<a href="#"><img class="product-thumbnail-img" src="./assets/img/Rectangle154.webp" alt="Rectangle"></a>
+							</div>
+							<div class="cart-wrap-block-name">
+								<span class="product-name"><a href="./single-product.html">Септик Евролос Эко 3</a></span>
+								<span class="product-price">156 525 ₽</span>
+							</div>
+							<div class="product-quantity">
+								<span class="minus">-</span>
+								<input id="1" type="number" class="quantity" value="1">
+								<span class="plus">+</span>
+							</div>
+							<div class="product-remove">
+									<span	class="remove">×</span>
+							</div>
+						</div>
+						<div class="cart-wrap-block">
+							<div class="product-thumbnail">
+								<a href="#"><img class="product-thumbnail-img"  src="./assets/img/Rectangle154.webp" alt="Rectangle"></a>
+							</div>
+							<div class="cart-wrap-block-name">
+								<span class="product-name"><a href="./single-product.html">Септик Евролос Эко 3</a></span>
+								<span class="product-price">156 525 ₽</span>
+							</div>
+							<div class="product-quantity">
+								<span class="minus">-</span>
+								<input id="2" type="number" class="quantity" value="1">
+								<span class="plus">+</span>
+								</div>
+								<div class="product-remove">
+										<span	class="remove">×</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bottom-block">
+						<div class="coupon">
+							<input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="Код купона">
+							<button type="submit" class="button" name="apply_coupon">Применить</button>
+						</div>
+						<div class="shop_table">
+							<div class="order-total">
+								<p>К оплате:&nbsp;</p>
+								<p><strong>556320,00 ₽</strong></p>
+							</div>
+						</div>
+					</div>
+					<div class="buttons-block">
+						<a href="#" class="back">
+							<img src="./assets/img/bi_arrow-left-short.png" alt="bi_arrow-left-short">вернуться назад
+						</a>
+						<a href="./checkout.html" class="proceed">Продолжить</a>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+</main>
+	<!--start footer-->
+	<div class="wrapper wrapper_footer">
+		<div class="container">
+			<footer class="footer">
+				<div class="footer__block">
+					<img class="footer-logo logo" src="./assets/img/footer_logo.png" alt="logo">
+					<div class="footer__payment">
+						<img class="footer__payment-payment-img" src="./assets/img/Visa_20211.png" alt="visa">
+						<img class="footer__payment-payment-img" src="./assets/img/Mastercard-logo1.png" alt="Mastercard">
+						<img class="footer__payment-payment-img" src="./assets/img/Mir-logo.SVG1.png" alt="Mir">
+					</div>
+					<p class="footer__copyright">© 2022 ПРО100СЕПТИК</p>
+					<a href="#" class="footer__politic">Политика конфиденциальности</a>
+				</div>
+				<div class="footer-right">
+					<img class="logo__hide logo footer__logo" src="./assets/img/footer_logo.png" alt="logo">
+					<div class="footer-menu">
+						<nav class="footer__services">
+							<p class="footer__services-title">Услуги</p>
+							<ul class="footer__services-menu">
+								<li class="footer__services-item"><a href="./catalog.html"
+										class="footer__services-item-link">Каталог септиков</a></li>
+								<li class="footer__services-item"><a href="./skvazhina.html"
+										class="footer__services-item-link">Скважина на воду</a></li>
+								<li class="footer__services-item"><a href="./kolodec.html"
+										class="footer__services-item-link">Колодей для дома</a></li>
+								<li class="footer__services-item"><a href="./zavodvody.html"
+										class="footer__services-item-link">Завод воды в дом</a></li>
+							</ul>
+						</nav>
+						<nav class="footer__about">
+							<p class="footer__about-title">О компании</p>
+							<ul class="footer__about-menu">
+								<li class="footer__about-item"><a href="./contacts.html" class="footer__about-item-link">Контакты</a></li>
+								<li class="footer__about-item"><a href="./foto.html" class="footer__about-item-link">Фото</a></li>
+								<li class="footer__about-item"><a href="./video.html" class="footer__about-item-link">Видео</a></li>
+								<li class="footer__about-item"><a href="./news.html" class="footer__about-item-link">Новости</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__contacts">
+						<div class="footer__contacts-phone">
+							<img class="footer__contacts-phone-img" src="./assets/img/carbon_phone.png" alt="phone">
+							<p class="footer__contacts-phone-number">+7 (495) 021-25-52</p>
+						</div>
+						<div class="footer__contacts-mail">
+							<img class="footer__contacts-mail-img" src="./assets/img/fluent_mail-16-regular.png" alt="mail">
+							<p class="footer__contacts-mail-address">zakaz@pro100septik.ru</p>
+						</div>
+						<div class="footer__contacts-social">
+							<p class="footer__contacts-social-title">Следите за нами:</p>
+							<div class="footer__contacts-social-list">
+								<a href="#" class="footer__contacts-social-list-item"><img
+										class="footer__contacts-social-list-item-img" src="./assets/img/cib_vk.png" alt="vk">
+								</a>
+								<a href="#" class="footer__contacts-social-list-item"><img
+										class="footer__contacts-social-list-item-img" src="./assets/img/Yandex_Zen_logo1.png"
+										alt="Yandex_Zen_logo">
+								</a>
+								<a href="#" class="footer__contacts-social-list-item"><img
+										class="footer__contacts-social-list-item-img" src="./assets/img/fa_youtube-square.png"
+										alt="youtube">
+								</a>
+								<a href="#" class="footer__contacts-social-list-item"><img
+										class="footer__contacts-social-list-item-img" src="./assets/img/rutubelogo.png" alt="rutube">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	</body>
+	
+	</html>
