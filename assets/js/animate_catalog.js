@@ -7,10 +7,7 @@ product.forEach((e) => {
       let img = e.childNodes[1];
       let image = e.childNodes[1].childNodes[1].cloneNode();
       let imgPos = img.getBoundingClientRect();
-      let cartPlace = cart.getBoundingClientRect();
       let body = document.querySelector(".header").getBoundingClientRect();
-      let topImage = body.top + imgPos.top;
-      // console.log(body.top);
       image.style.position = "absolute";
       image.style.top = img.offsetTop + "px";
       image.style.left = img.offsetLeft + "px";
@@ -18,9 +15,7 @@ product.forEach((e) => {
       image.style.width = "281px";
       let top = cart.offsetTop;
       let left = cart.offsetLeft + "px";
-      // let finishLeft = window.pageYOffset + left + "px";
       let finishTop = window.pageYOffset - top - 50 + "px";
-      // console.log(finishLeft);
       console.log(finishTop);
       document.body.appendChild(image);
       image.animate(
@@ -29,7 +24,6 @@ product.forEach((e) => {
             top: finishTop,
             left: left,
             transform: "scale(0.2)",
-            // transform: `translate( ${finishLeft}px, ${finishTop}px) scale(0.5)`,
           },
         ],
         {
