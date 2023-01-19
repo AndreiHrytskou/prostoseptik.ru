@@ -5784,7 +5784,7 @@ html, body {
 }
 
 .error__block-left {
-  z-index: 2;
+  z-index: 3;
 }
 
 .error .subtitle {
