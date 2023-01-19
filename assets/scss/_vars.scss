@@ -61,3 +61,16 @@ $archivo: 'Archivo', sans-serif;
 		@include fonts($roboto, 25px, 400, 38px, $white);
 		margin-bottom: 20px;
 }
+.text{
+	@include fonts($roboto, 14px, 400, 18px, $dark_gray);
+}
+.btn{
+	background-color: $paginat;
+	border-radius: 5px;
+	padding: 20px 40px;
+	@include fonts($roboto, 16px, 700, 16px, $white);
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	text-decoration: none;
+}

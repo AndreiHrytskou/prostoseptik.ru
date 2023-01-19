@@ -59,6 +59,30 @@
   margin-bottom: 20px;
 }
 
+.text {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #2d2d2d;
+}
+
+.btn {
+  background-color: #2a447f;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  padding: 20px 40px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1931,37 +1955,6 @@ html, body {
 .thanks .mobal__btn:hover {
   -webkit-box-shadow: 0px 0px 10px 0px #0c1a38 inset;
           box-shadow: 0px 0px 10px 0px #0c1a38 inset;
-}
-
-.error {
-  width: 100%;
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 50px;
-}
-
-.error__title {
-  font-family: "Comfortaa", sans-serif;
-  font-size: 160px;
-  font-weight: 900;
-  line-height: 172px;
-  color: #2d2d2d;
 }
 
 .search-visible {
@@ -5752,6 +5745,64 @@ html, body {
   height: 14px;
 }
 
+.error {
+  width: 100%;
+  min-height: 720px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+}
+
+.error__block {
+  margin: 158px auto;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f9f9f9;
+  max-width: 1216px;
+  width: 100%;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  padding: 120px 0 120px 70px;
+}
+
+.error__block-left {
+  z-index: 2;
+}
+
+.error .subtitle {
+  margin-bottom: 12px;
+}
+
+.error .btn__block {
+  margin: 50px 0 20px;
+}
+
+.error__img {
+  max-width: 406px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 @media screen and (max-width: 1280px) {
   .container {
     max-width: 95%;
@@ -5776,6 +5827,10 @@ html, body {
 }
 
 @media screen and (max-width: 1200px) {
+  .header__menu-cart {
+    width: 45px;
+    height: 45px;
+  }
   .baner-right .baner-right-img {
     display: none;
   }
@@ -6841,6 +6896,39 @@ html, body {
   .order .shop_table {
     margin-bottom: 60px;
   }
+  .error__block {
+    margin: 124px 0;
+    padding: 40px 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .error__block .error__block-left {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .error__block .subtitle, .error__block .text {
+    text-align: center;
+  }
+  .error__block .error__img {
+    position: relative;
+  }
+  .error__block .btn__block {
+    margin: 40px auto;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -7069,8 +7157,13 @@ html, body {
   .mySwiper .swiper-horizontal > .swiper-pagination-bullets, .mySwiper .swiper-pagination-bullets.swiper-pagination-horizontal, .mySwiper .swiper-pagination-custom, .mySwiper .swiper-pagination-fraction {
     bottom: 290px;
   }
-  .logo {
+  .header__logo-img {
+    width: 125.59px;
+    height: 31px;
+  }
+  .footer__logo {
     width: 158px;
+    height: 39px;
   }
   .video-galery-block {
     height: 190px;
