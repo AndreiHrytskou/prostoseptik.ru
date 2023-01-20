@@ -1,13 +1,16 @@
 // search
 const searchBtn = document.querySelector(".header__menu-search");
 const search = document.querySelector(".search");
-const searchImg = document.querySelector(".search img");
 const searchInput = document.querySelector("#search");
+const fon = document.createElement("div");
 
 const searchShow = function () {
   search.classList.toggle("showSearch");
 };
 searchBtn.addEventListener("click", (e) => {
+  document.body.append(fon);
+  fon.classList.toggle("div-hide");
+  searchBtn.classList.toggle("searchActive");
   e.stopPropagation();
   searchShow();
 });
@@ -15,29 +18,12 @@ searchBtn.addEventListener("click", (e) => {
 document.addEventListener("click", (e) => {
   let target = e.target;
   let its_menu = target == search || search.contains(target);
+  let its_searchBtn = target == searchBtn || searchBtn.contains(target);
+  let its_fon = target == fon || fon.contains(target);
 
-  if (!its_menu) {
+  if (!its_menu && !its_searchBtn && its_fon) {
     search.classList.remove("showSearch");
+    searchBtn.classList.toggle("searchActive");
+    fon.classList.toggle("div-hide");
   }
 });
-// searchImg.addEventListener("click", () => {
-//   let val = searchInput.value;
-//   let body = document.body;
-//   console.log(body);
-//   if (val != "") {
-//     body.forEach((e) => {
-//       if (e.innerText.search(val)) {
-//         showWord();
-//       }
-//     });
-//   }
-//   function showWord(string, pos, len) {
-//     return (
-//       string.slice(0, pos) +
-//       "<mark>" +
-//       string.slice(pos, pos + len) +
-//       "</mark>" +
-//       string.slice(pos + len)
-//     );
-//   }
-// });
