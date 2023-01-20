@@ -2283,6 +2283,7 @@ html, body {
 
 .orderby__active {
   display: block;
+  z-index: 1;
 }
 
 .filtr__img-active {

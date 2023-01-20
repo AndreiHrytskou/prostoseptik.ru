@@ -1,5 +1,6 @@
-let product = document.querySelectorAll(".product");
-product.forEach((e) => {
+let catalog = document.querySelectorAll(".product");
+let card = document.querySelectorAll(".card-btn");
+catalog.forEach((e) => {
   let btn = e.childNodes[3].childNodes[5];
   btn.addEventListener("click", () => {
     function getCoords() {
@@ -14,7 +15,6 @@ product.forEach((e) => {
       let top = cart.offsetTop;
       let left = cart.offsetLeft + "px";
       let finishTop = window.pageYOffset - top - 50 + "px";
-      console.log(finishTop);
       document.body.appendChild(image);
       image.animate(
         [
@@ -34,5 +34,11 @@ product.forEach((e) => {
       }
     }
     getCoords();
+  });
+});
+card.forEach((e) => {
+  e.addEventListener("click", (elem) => {
+    elem.preventDefault();
+    e.style.zIndex = "-1";
   });
 });

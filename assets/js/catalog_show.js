@@ -1,10 +1,8 @@
-let arrProd = document.querySelectorAll(".product");
 const btn = document.querySelector(".more-btn");
-let card = document.querySelectorAll(".card-btn");
 let amountProduct = document.querySelectorAll(".cart_item");
 let amountProd = [];
 // let newAmount = (amountProd = 6);
-arrProd.forEach((el) => {
+catalog.forEach((el) => {
   amountProd.push(el);
   return amountProd;
 });
@@ -32,12 +30,7 @@ showSidebar.addEventListener("click", () => {
   sidebar.classList.toggle("sidebar-show");
 });
 let listProd = {};
-card.forEach((e) => {
-  e.addEventListener("click", (elem) => {
-    elem.preventDefault();
-    e.style.zIndex = "-1";
-  });
-});
+
 document.addEventListener("click", (e) => {
   e.stopPropagation();
   let target = e.target;
@@ -54,27 +47,27 @@ const filtr = document.querySelector(".filtr");
 const filtrItem = document.querySelector(".filtr__item");
 const filtrImg = document.querySelector(".filtr__img");
 let orderbyItem = document.querySelectorAll(".orderby__item");
-if (filtr != undefined) {
-  filtr.addEventListener("click", () => {
-    orderby.classList.toggle("orderby__active");
-    filtrImg.classList.toggle("filtr__img-active");
-    orderbyItem.forEach((e) => {
-      e.addEventListener("click", () => {
-        filtrItem.innerText = e.innerText;
-      });
+// if (filtr != undefined) {
+filtr.addEventListener("click", () => {
+  orderby.classList.toggle("orderby__active");
+  filtrImg.classList.toggle("filtr__img-active");
+  orderbyItem.forEach((e) => {
+    e.addEventListener("click", () => {
+      filtrItem.innerText = e.innerText;
     });
   });
+});
 
-  document.addEventListener("click", (e) => {
-    e.stopPropagation();
-    let target = e.target;
-    let its_menu = target == filtr || filtr.contains(target);
-    if (!its_menu) {
-      orderby.classList.remove("orderby__active");
-      filtrImg.classList.remove("filtr__img-active");
-    }
-  });
-}
+document.addEventListener("click", (e) => {
+  e.stopPropagation();
+  let target = e.target;
+  let its_menu = target == filtr || filtr.contains(target);
+  if (!its_menu) {
+    orderby.classList.remove("orderby__active");
+    filtrImg.classList.remove("filtr__img-active");
+  }
+});
+// }
 const manufacturer = document.querySelector(".manufacturer__block");
 const select = document.querySelector(".manufacturer-select");
 manufacturer.addEventListener("click", () => {
