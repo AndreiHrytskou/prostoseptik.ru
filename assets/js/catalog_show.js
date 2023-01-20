@@ -1,46 +1,3 @@
-const btn = document.querySelector(".more-btn");
-let amountProduct = document.querySelectorAll(".cart_item");
-let amountProd = [];
-// let newAmount = (amountProd = 6);
-catalog.forEach((el) => {
-  amountProd.push(el);
-  return amountProd;
-});
-amountProd.forEach((el) => {
-  el.style.display = "none";
-});
-let newArr = amountProd.slice(0, 6);
-newArr.forEach((e) => {
-  e.style.display = "flex";
-});
-btn.addEventListener("click", (e) => {
-  e.preventDefault();
-  amountProd.forEach((elem) => {
-    elem.style.display = "flex";
-    btn.style.display = "none";
-  });
-  localStorage.setItem("number", amountProduct.length);
-});
-
-//sidebar show
-const sidebar = document.querySelector(".sidebar");
-const showSidebar = document.querySelector(".sidebar-hide");
-const showForm = document.querySelector(".sidebar__form");
-showSidebar.addEventListener("click", () => {
-  sidebar.classList.toggle("sidebar-show");
-});
-let listProd = {};
-
-document.addEventListener("click", (e) => {
-  e.stopPropagation();
-  let target = e.target;
-  let its_menu = target == showSidebar || showSidebar.contains(target);
-  let its_showForm = target == showForm || showForm.contains(target);
-  if (!its_menu && !its_showForm) {
-    sidebar.classList.remove("sidebar-show");
-    //  filtrImg.classList.remove("sidebar-show");
-  }
-});
 //  orderby
 const orderby = document.querySelector(".orderby");
 const filtr = document.querySelector(".filtr");
@@ -68,19 +25,12 @@ document.addEventListener("click", (e) => {
   }
 });
 // }
-const manufacturer = document.querySelector(".manufacturer__block");
-const select = document.querySelector(".manufacturer-select");
-manufacturer.addEventListener("click", () => {
-  manufacturer.classList.toggle("manufacturer__active");
-  select.classList.toggle("select__active");
-});
-document.addEventListener("click", (e) => {
-  e.stopPropagation();
-  let target = e.target;
-  let its_menu = target == manufacturer || manufacturer.contains(target);
-  let its_select = target == select || select.contains(target);
-  if (!its_menu && !its_select) {
-    manufacturer.classList.remove("manufacturer__active");
-    select.classList.remove("select__active");
-  }
+const btn = document.querySelector(".more-btn");
+btn.addEventListener("click", (e) => {
+  e.preventDefault();
+  amountProd.forEach((elem) => {
+    elem.style.display = "flex";
+    btn.style.display = "none";
+  });
+  localStorage.setItem("number", amountProduct.length);
 });
