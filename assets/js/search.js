@@ -9,7 +9,7 @@ const searchShow = function () {
 };
 searchBtn.addEventListener("click", (e) => {
   document.body.append(fon);
-  fon.classList.toggle("div-hide");
+  fon.classList.toggle("background__white");
   searchBtn.classList.toggle("searchActive");
   e.stopPropagation();
   searchShow();
@@ -24,6 +24,6 @@ document.addEventListener("click", (e) => {
   if (!its_menu && !its_searchBtn && its_fon) {
     search.classList.remove("showSearch");
     searchBtn.classList.toggle("searchActive");
-    fon.classList.toggle("div-hide");
+    fon.classList.toggle("background__white");
   }
 });

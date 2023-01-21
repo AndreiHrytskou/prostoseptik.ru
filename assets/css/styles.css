@@ -2015,6 +2015,10 @@ html, body {
   height: 15px;
 }
 
+.search__page {
+  margin-top: 50px;
+}
+
 .wrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5827,7 +5831,7 @@ html, body {
   width: 100%;
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 90px;
 }
 
 @media screen and (max-width: 1280px) {
@@ -6527,6 +6531,17 @@ html, body {
   .sort {
     display: none;
   }
+  .search__name {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .search__name .sort {
+    display: block;
+  }
   .textblock-wrap-image {
     max-width: 100%;
     width: 100%;
@@ -6923,6 +6938,9 @@ html, body {
   .order .shop_table {
     margin-bottom: 60px;
   }
+  .error {
+    min-height: auto;
+  }
   .error__block {
     margin: 124px 0;
     padding: 40px 20px;
@@ -6950,8 +6968,19 @@ html, body {
   .error__block .subtitle, .error__block .text {
     text-align: center;
   }
+  .error__block .error__block-right {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .error__block .error__img {
     position: relative;
+    max-width: 50%;
   }
   .error__block .btn__block {
     margin: 40px auto;
@@ -7122,6 +7151,10 @@ html, body {
 }
 
 @media screen and (max-width: 475px) {
+  .sidebar__page {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
   .video-bottom {
     height: 190px;
   }

@@ -524,6 +524,14 @@
 	.sort{
 		display: none;
 	}
+	.search__name{
+		margin-top: 10px;
+		margin-bottom: 30px;
+		justify-content: center;
+		.sort{
+		display: block;
+	}
+	}
 	.textblock-wrap-image{
 		max-width: 100%;
 		width: 100%;
@@ -846,6 +854,9 @@
 	.order .shop_table{
 		margin-bottom: 60px;
 	}
+	.error{
+		min-height: auto;
+	}
 	.error__block{
 		margin: 124px 0;
 		padding: 40px 20px;
@@ -858,8 +869,13 @@
 		.subtitle, .text{
 			text-align: center;
 		}
+		.error__block-right{
+			display: flex;
+			justify-content: center;
+		}
 		.error__img{
 			position: relative;
+			max-width: 50%;
 		}
 		.btn__block{
 			margin: 40px auto;
@@ -990,6 +1006,10 @@
 	}
 }
 @media screen and ( max-width: 475px ){
+	.sidebar__page{
+		max-width: 100%;
+		margin-bottom: 30px;
+	}
 	.video-bottom {
     height: 190px;
 }
