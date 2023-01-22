@@ -125,6 +125,12 @@
 				letter-spacing: 0.03em;
 				text-transform: uppercase;
 			}
+			.form-btn:hover{
+				padding: 18px 40px;
+				background-color: $white;
+				border: 2px solid $paginat;
+				color: $paginat;
+			}
 			.form-btn:disabled{
 				cursor: auto;
 				opacity: 0.8;

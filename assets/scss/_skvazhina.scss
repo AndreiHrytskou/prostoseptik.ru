@@ -93,6 +93,13 @@
 	text-transform: uppercase;
 	text-decoration: none;
 }
+.consultant__btn:hover{
+	padding: 18px 40px;
+	box-sizing: border-box;
+	border: 2px solid $paginat;
+	background-color: $white;
+	color: $paginat;
+}
 .form-button{
 	cursor: pointer;
 	background-color: $paginat;
@@ -103,6 +110,12 @@
 	text-align: center;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
+	}
+	.form-button:hover{
+		padding: 18px 40px;
+		background-color: $white;
+		color: $paginat;
+		border: 2px solid $paginat;
 	}
 .textblock-wrap-container:nth-last-child(2){
 	flex-direction: row-reverse;

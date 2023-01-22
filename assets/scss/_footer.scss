@@ -126,6 +126,11 @@
 							width: 34px;
 							height: 34px;
 						}
+							&-img:hover{
+								transform: scale(1.2);
+								margin-left: 5px;
+								opacity: 0.9;
+							}
 					}
 				}
 			}

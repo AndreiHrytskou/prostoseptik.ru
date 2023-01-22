@@ -1108,6 +1108,14 @@ html, body {
   height: 30px !important;
 }
 
+.baner-left-social-img:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  margin-left: 5px;
+  opacity: 0.9;
+}
+
 .baner-right {
   max-width: 726px;
   width: 100%;
@@ -1130,6 +1138,12 @@ html, body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.baner-btn:hover {
+  border: 2px solid #009999;
+  background: white;
+  color: #009999;
 }
 
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after,
@@ -2149,12 +2163,12 @@ html, body {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding: 20px 0;
+  padding: 18px 0;
   text-decoration: none;
   -webkit-border-radius: 5px;
           border-radius: 5px;
   position: relative;
-  bottom: 56px;
+  bottom: 53px;
   width: 100%;
   z-index: 0;
 }
@@ -2232,6 +2246,15 @@ html, body {
   -webkit-border-radius: 5px;
           border-radius: 5px;
   z-index: 1;
+}
+
+.catalog .product .card-btn:hover {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+  padding: 18px 0;
+  color: #009999;
+  border: 2px solid #009999;
 }
 
 .catalog .card-descr {
@@ -4768,6 +4791,13 @@ html, body {
   text-transform: uppercase;
 }
 
+.contacts-form-inputs .form-btn:hover {
+  padding: 18px 40px;
+  background-color: white;
+  border: 2px solid #2a447f;
+  color: #2a447f;
+}
+
 .contacts-form-inputs .form-btn:disabled {
   cursor: auto;
   opacity: 0.8;
@@ -5239,6 +5269,15 @@ html, body {
   text-decoration: none;
 }
 
+.consultant__btn:hover {
+  padding: 18px 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #2a447f;
+  background-color: white;
+  color: #2a447f;
+}
+
 .form-button {
   cursor: pointer;
   background-color: #2a447f;
@@ -5254,6 +5293,13 @@ html, body {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.form-button:hover {
+  padding: 18px 40px;
+  background-color: white;
+  color: #2a447f;
+  border: 2px solid #2a447f;
 }
 
 .textblock-wrap-container:nth-last-child(2) {
@@ -5804,6 +5850,14 @@ html, body {
 .footer__contacts-social-list-item-img {
   width: 34px;
   height: 34px;
+}
+
+.footer__contacts-social-list-item-img:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  margin-left: 5px;
+  opacity: 0.9;
 }
 
 .logo__hide {
