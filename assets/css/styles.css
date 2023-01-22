@@ -1250,6 +1250,12 @@ html, body {
 }
 
 .block-bottom-item {
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
   width: 100%;
   background-color: white;
   -webkit-border-radius: 5px;
@@ -1563,6 +1569,12 @@ html, body {
 
 .review {
   padding: 80px 0;
+  -webkit-transform: translateX(-1000%);
+      -ms-transform: translateX(-1000%);
+          transform: translateX(-1000%);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
