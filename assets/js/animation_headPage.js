@@ -1,9 +1,10 @@
 window.addEventListener("load", () => {
-  setTimeout(loadBlock, 1000);
+  setTimeout(loadBlock, 1500);
   function loadBlock() {
     let block = document.querySelectorAll(".block-bottom-item");
     block.forEach((e) => {
       e.style.transform = "scale(1)";
+      e.style.transition = "1s";
     });
   }
 });
