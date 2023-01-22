@@ -222,6 +222,7 @@
 			text-decoration: none;
 	}
 	.baner-btn:hover{
+		padding: 18.5px 40px;
 		border: 2px solid  $dark_blue;
 		background: $white;
 		color: $dark_blue;
@@ -391,6 +392,12 @@
 			text-align: center;
 			letter-spacing: 0.03em;
 			text-transform: uppercase;
+		}
+		&-btn:hover{
+			background-color: $white;
+			border: 2px solid $paginat;
+			padding: 18.5px 40px;
+			color: $paginat;
 		}
 	}
 }
@@ -609,6 +616,9 @@
 				width: 60px;
 				height: 22px;
 			}
+		}
+		&-btn:hover{
+			background-color: $dark_blue;
 		}
 	}
 	.swiper-top{

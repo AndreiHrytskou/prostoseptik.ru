@@ -1141,6 +1141,7 @@ html, body {
 }
 
 .baner-btn:hover {
+  padding: 18.5px 40px;
   border: 2px solid #009999;
   background: white;
   color: #009999;
@@ -1435,6 +1436,13 @@ html, body {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.block2-bottom-btn:hover {
+  background-color: white;
+  border: 2px solid #2a447f;
+  padding: 18.5px 40px;
+  color: #2a447f;
 }
 
 .block__hide {
@@ -1794,6 +1802,10 @@ html, body {
 .review-bottom-btn img {
   width: 60px;
   height: 22px;
+}
+
+.review-bottom-btn:hover {
+  background-color: #009999;
 }
 
 .review .swiper-top {
@@ -2252,7 +2264,7 @@ html, body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: white;
-  padding: 18px 0;
+  padding: 18.5px 0;
   color: #009999;
   border: 2px solid #009999;
 }
@@ -4792,7 +4804,7 @@ html, body {
 }
 
 .contacts-form-inputs .form-btn:hover {
-  padding: 18px 40px;
+  padding: 18.5px 40px;
   background-color: white;
   border: 2px solid #2a447f;
   color: #2a447f;
