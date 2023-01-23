@@ -1,5 +1,6 @@
 let catalog = document.querySelectorAll(".product");
 let card = document.querySelectorAll(".card-btn");
+const prodImg = document.querySelectorAll(".product-img");
 catalog.forEach((e) => {
   let btn = e.childNodes[3].childNodes[5];
   btn.addEventListener("click", () => {
@@ -93,3 +94,26 @@ document.addEventListener("click", (e) => {
     //  filtrImg.classList.remove("sidebar-show");
   }
 });
+// let imgSpan = document.createElement("p");
+// prodImg.forEach((img) => {
+//   img.addEventListener("mouseover", () => {
+//     let image = img.cloneNode();
+//     image.style.position = "absolute";
+//     image.style.top = img.offsetTop + "px";
+//     image.style.left = img.offsetLeft + "px";
+//     image.style.width = "284px";
+//     image.style.zIndex = 999999;
+//     img.appendChild(image);
+//     image.animate(
+//       [
+//         {
+//           transform: "scale(1.5)",
+//         },
+//       ],
+//       { duration: 800 }
+//     );
+//   });
+//   //   img.addEventListener("mouseout", () => {
+//   //     imgSpan.remove();
+//   //   });
+// });

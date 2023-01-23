@@ -16,8 +16,8 @@ window.addEventListener("scroll", () => {
   //   console.log(review.offsetTop);
   //   console.log(window.pageYOffset);
   review.getBoundingClientRect();
-  if (window.pageYOffset > review.offsetTop - 300) {
+  if (window.pageYOffset > review.offsetTop - 500) {
     review.style.transform = "translateX(0)";
-    review.style.transition = "1s";
+    review.style.transition = "0.5s";
   }
 });
