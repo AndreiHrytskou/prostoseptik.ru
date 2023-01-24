@@ -21,6 +21,9 @@
 	}
 }
 @media screen and ( max-width: 1200px ){
+	.main{
+		padding-top: 111px;
+	}
 	.header__menu-cart{
 		width: 45px;
 		height: 45px;
@@ -259,7 +262,7 @@
 	.discount__hide{
 	display: flex;
 	justify-content: center;
-	margin: 0 auto;
+	margin: 0 auto 10px;
 	max-width: 500px;
 	width: 100%;
 }
