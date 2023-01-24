@@ -5060,6 +5060,10 @@ html, body {
   display: none;
 }
 
+.textblock-wrap-image-pic {
+  margin-top: 60px;
+}
+
 .benefits {
   margin-top: 80px;
 }
