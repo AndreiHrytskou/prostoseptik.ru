@@ -224,12 +224,18 @@
   }
   .block-top{
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	gap: 20px;
   }
   .block-bottom{
 	flex-direction: column;
 	align-items: center;
+  }
+  .block-title{
+	max-width: 100%;
+  }
+  .block-top-subtitle{
+	max-width: 100%;
   }
   .block-bottom-item{
 	flex-direction: row;
