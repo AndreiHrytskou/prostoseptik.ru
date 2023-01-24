@@ -6383,6 +6383,12 @@ html, body {
 }
 
 @media screen and (max-width: 1024px) {
+  .foto-galery-wrap {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
   .foto-galery {
     margin-top: 30px;
     gap: 30px;
