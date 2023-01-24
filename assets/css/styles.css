@@ -6065,7 +6065,12 @@ html, body {
   .header__menu .header__menu-discount {
     display: none;
   }
-  .header__menu-list, .header__menu-search {
+  .header__menu-search {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+  }
+  .header__menu-list {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
