@@ -409,7 +409,7 @@ html, body {
 
 .cart-modal .cart-wrap-block .cart-wrap-block-name {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .cart-modal .cart-wrap-block .remove {
