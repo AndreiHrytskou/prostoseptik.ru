@@ -6921,12 +6921,15 @@ html, body {
     font-size: 25px;
     line-height: 28px;
   }
+  .product-headbaner .product-descriptions-top-price {
+    font-size: 20px;
+    line-height: 26px;
+  }
   .block-top-subtitle,
   .block2-top-subtitle,
   .video-top-subtitle,
   .review-top-subtitle,
   .form-left-subtitle,
-  .product-headbaner .product-descriptions-top-price,
   .textblock-wrap-block-title {
     font-size: 15px;
     line-height: 22px;
