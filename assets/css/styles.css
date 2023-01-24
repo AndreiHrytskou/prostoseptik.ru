@@ -6392,6 +6392,9 @@ html, body {
 }
 
 @media screen and (max-width: 1024px) {
+  .characteristic-wrap-list-item {
+    gap: 10px;
+  }
   .foto-galery-wrap {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
