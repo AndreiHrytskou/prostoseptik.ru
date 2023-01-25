@@ -6021,6 +6021,9 @@ html, body {
   .container {
     max-width: 95%;
   }
+  .textblock-wrap-container-block {
+    max-width: 50%;
+  }
   .header__menu-list {
     gap: 15px;
   }
