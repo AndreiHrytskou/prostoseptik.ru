@@ -2858,6 +2858,16 @@ html, body {
   cursor: pointer;
 }
 
+.fixed {
+  position: fixed;
+  top: 60px;
+}
+
+.fixed2 {
+  position: fixed;
+  top: 100px;
+}
+
 .cart .cart-title {
   margin-top: 30px;
 }
