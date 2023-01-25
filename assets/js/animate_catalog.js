@@ -62,7 +62,6 @@ document.addEventListener("click", (e) => {
 
 let amountProduct = document.querySelectorAll(".cart_item");
 let amountProd = [];
-// let newAmount = (amountProd = 6);
 catalog.forEach((el) => {
   amountProd.push(el);
   return amountProd;
@@ -91,29 +90,5 @@ document.addEventListener("click", (e) => {
   let its_showForm = target == showForm || showForm.contains(target);
   if (!its_menu && !its_showForm) {
     sidebar.classList.remove("sidebar-show");
-    //  filtrImg.classList.remove("sidebar-show");
   }
 });
-// let imgSpan = document.createElement("p");
-// prodImg.forEach((img) => {
-//   img.addEventListener("mouseover", () => {
-//     let image = img.cloneNode();
-//     image.style.position = "absolute";
-//     image.style.top = img.offsetTop + "px";
-//     image.style.left = img.offsetLeft + "px";
-//     image.style.width = "284px";
-//     image.style.zIndex = 999999;
-//     img.appendChild(image);
-//     image.animate(
-//       [
-//         {
-//           transform: "scale(1.5)",
-//         },
-//       ],
-//       { duration: 800 }
-//     );
-//   });
-//   //   img.addEventListener("mouseout", () => {
-//   //     imgSpan.remove();
-//   //   });
-// });
