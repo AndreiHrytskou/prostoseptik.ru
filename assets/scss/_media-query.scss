@@ -381,8 +381,14 @@
 	}
 	.review-top{
 		flex-direction: column;
-		align-items: center;
+		align-items: flex-start;
 		gap: 30px;
+	}
+	.review-title{
+		max-width: 100%;
+	}
+	.review-top-subtitle{
+		max-width: 100%;
 	}
 	.product-headbaner{
 		flex-direction: column;
