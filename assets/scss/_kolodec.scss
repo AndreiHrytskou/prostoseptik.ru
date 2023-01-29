@@ -17,6 +17,8 @@
 	margin-top: 60px;
 }
 .benefits{
+		transform: translateX(-1000%);
+	transition: 0.5s;
 	margin-top: 80px;
 	&-title{
 		@include fonts($comfortaa, 45px, 700, 50px, $dark_gray);
@@ -28,6 +30,8 @@
 		justify-content: center;
 		gap: 30px;
 		&-item{
+				transform: scale(0); 
+			transition: 2s;
 			background-color: $dark_blue;
 			border-radius: 5px;
 			padding: 30px 40px;

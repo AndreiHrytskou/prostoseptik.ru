@@ -4228,6 +4228,7 @@ html, body {
 }
 
 .product-headbaner .product-descriptions-top-btn-item {
+  cursor: pointer;
   border: none;
   width: 100%;
   max-width: 146px;
@@ -4568,6 +4569,61 @@ html, body {
 .form-right {
   max-width: 624px;
   width: 100%;
+}
+
+.modal__product {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.modal__product .title {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.modal__product .modal__img {
+  width: 36px;
+  height: 36px;
+}
+
+.modal__product .btn {
+  max-width: 400px;
+  width: 100%;
+}
+
+.modal__product .toCatalog {
+  max-width: 400px;
+  width: 100%;
+  text-decoration: none;
+  border: 2px solid #2a447f;
+  padding: 20px 40px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #2a447f;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.modal__product .remove {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-family: "Comfortaa", sans-serif;
 }
 
 .news_page {
@@ -5102,6 +5158,12 @@ html, body {
 }
 
 .benefits {
+  -webkit-transform: translateX(-1000%);
+      -ms-transform: translateX(-1000%);
+          transform: translateX(-1000%);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   margin-top: 80px;
 }
 
@@ -5128,6 +5190,12 @@ html, body {
 }
 
 .benefits-block-item {
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
   background-color: #009999;
   -webkit-border-radius: 5px;
           border-radius: 5px;
