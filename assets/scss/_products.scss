@@ -340,6 +340,7 @@
 	.title{
 		max-width: 100%;
 		margin-bottom: 10px;
+		text-align: center;
 	}
 	.modal__img{
 		width: 36px;
@@ -348,13 +349,15 @@
 	.btn{
 		max-width: 400px;
 		width: 100%;
+		padding: 20px 30px;
 	}
 	.toCatalog{
 		max-width: 400px;
 		width: 100%;
 		text-decoration: none;
 		border: 2px solid $paginat;
-		padding: 20px 40px;
+		border-radius: 5px;
+		padding: 20px 15px;
 		@include fonts($roboto, 16px, 700, 16px, $paginat);
 		text-align: center;
 		letter-spacing: 0.03em;
