@@ -1,13 +1,7 @@
 let item = document.querySelectorAll(".foto-check-list-item");
 const arrItems = document.querySelector(".foto-check-list");
 const filter = document.querySelector(".foto-filtr");
-// if (window.screen.width > 769) {
-//   item.forEach((e) => {
-//     e.addEventListener("click", () => {
-//       e.classList.toggle("item_active");
-//     });
-//   });
-// }
+
 item.forEach((e) => {
   e.addEventListener("click", () => {
     if (!item[0].classList.contains("item_active")) {
@@ -106,19 +100,6 @@ slidesPlugin();
 slidesPlugin2();
 slidesPlugin3();
 slidesPlugin4();
-// 768
-// if (window.screen.width < 769) {
-//   filter.addEventListener("click", () => {
-//     arrItems.classList.toggle("items-show");
-//     item.forEach((e) => {
-//       e.addEventListener("click", () => {
-//         e.classList.toggle("item_active");
-//       });
-//     });
-//     filter.classList.toggle("filter-show");
-//   });
-// }
-// btn
 
 const btnFoto = document.querySelector(".foto-more");
 let arrFoto = document.querySelectorAll(".foto-galery-wrap");
