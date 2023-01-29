@@ -41,7 +41,7 @@
 			flex-direction: row-reverse;
 		}
 		&-descr{
-			max-width: 320px;
+			max-width: 38%;
 			&-subtitle{
 				@include fonts($roboto, 20px, 700, 26px, $dark_gray);
 			}

@@ -1442,7 +1442,7 @@ html, body {
 .block2-bottom-btn:hover {
   background-color: white;
   border: 2px solid #2a447f;
-  padding: 18.5px 40px;
+  padding: 18.2px 40px;
   color: #2a447f;
 }
 
@@ -4972,7 +4972,7 @@ html, body {
 }
 
 .foto-galery-descr {
-  max-width: 320px;
+  max-width: 38%;
 }
 
 .foto-galery-descr-subtitle {
@@ -5505,7 +5505,7 @@ html, body {
   overflow: hidden;
   width: 100%;
   height: 348px;
-  max-width: 766px;
+  max-width: 60%;
 }
 
 .video-galery-block .video2-bottom__item,
@@ -6749,6 +6749,13 @@ html, body {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  .foto-galery-descr,
+  .video-galery-block {
+    max-width: 100%;
+  }
+  .video-galery-block {
+    height: auto;
+  }
   .footer-right {
     gap: 20px;
   }
@@ -7227,9 +7234,6 @@ html, body {
   .map {
     margin-top: 60px;
   }
-  .video-galery-block {
-    height: 245px;
-  }
   .product-headbaner .gallery-top .swiper-slide img {
     -o-object-fit: cover;
        object-fit: cover;
@@ -7438,9 +7442,6 @@ html, body {
   .catalog .product {
     max-width: 100%;
   }
-  .video-galery-block {
-    height: 222px;
-  }
 }
 
 @media screen and (max-width: 436px) {
@@ -7454,9 +7455,6 @@ html, body {
   .footer__logo {
     width: 158px;
     height: 39px;
-  }
-  .video-galery-block {
-    height: 190px;
   }
 }
 
@@ -7474,9 +7472,6 @@ html, body {
   }
   .video-bottom {
     height: 160px;
-  }
-  .video-galery-block {
-    height: 170px;
   }
   .product-quantity {
     width: 100%;
