@@ -30,9 +30,7 @@ btnForm.forEach((e) => {
     });
   });
 });
-btn2.addEventListener("click", (e) => {
-  e.preventDefault();
-});
+//
 
 button.addEventListener("click", (e) => {
   e.preventDefault();
