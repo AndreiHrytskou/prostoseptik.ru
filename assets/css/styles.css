@@ -6670,7 +6670,7 @@ html, body {
   .block2-middle::-webkit-scrollbar-thumb {
     background-color: #009999;
     width: 120px;
-    height: 20px;
+    height: 25px;
   }
   .block2-middle-item {
     width: 100%;
