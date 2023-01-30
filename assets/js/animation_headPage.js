@@ -20,7 +20,7 @@ window.addEventListener("scroll", () => {
 const blockHover = document.querySelectorAll(".block2-middle-item");
 if (window.innerWidth < 1025) {
   blockHover.forEach((e) => {
-    e.addEventListener("click", () => {
+    e.addEventListener("focus", () => {
       e.classList.toggle("block__hide_active");
     });
   });
