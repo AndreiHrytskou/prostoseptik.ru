@@ -297,10 +297,11 @@
 @media screen and ( max-width: 1024px ){
 	.block2-middle-item:hover{
 		box-shadow: none;
-		.block__hide{
-		z-index: -1;
 	}
-	}
+	.block__hide{
+	z-index: -1;
+	transform: rotateY(0);
+}
 	.block2-middle .block__hide_active{
 		.block__hide{
 			z-index: 1;
