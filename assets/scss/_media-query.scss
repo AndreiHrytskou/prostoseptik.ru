@@ -295,6 +295,17 @@
 	}
 }
 @media screen and ( max-width: 1024px ){
+	.block2-middle-item:hover{
+		box-shadow: none;
+		.block__hide{
+		z-index: -1;
+	}
+	}
+	.block2-middle .block__hide_active{
+		.block__hide{
+			z-index: 1;
+		}
+	}
 	.characteristic-wrap-list-item{
 		gap: 10px;
 	}
