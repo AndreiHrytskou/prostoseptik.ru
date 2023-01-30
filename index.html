@@ -385,9 +385,9 @@
 				<div class="review-middle">
 					<div class="swiper mySwiper2">
 						<div class="swiper-wrapper">
-								<div class="swiper-slide"  itemprop="review" itemscope itemtype="https://schema.org/Review">
+								<div class="swiper-slide">
 									<div class="swiper-top">
-											<img itemprop="image" class="slider-top-avatar" src="./assets/img/Zaharova.jfif" alt="avatar2">
+											<img class="slider-top-avatar" src="./assets/img/Zaharova.jfif" alt="avatar2">
 											<p itemprop="author" itemtype="https://schema.org/Person" itemscope class="slider-top-name">
 												<meta itemprop="name" content="Fred Benson" />
 												Саша Захарова
@@ -412,7 +412,11 @@
 											</div>
 										</div>
 									</div>
-									<div class="slider-bottom"><p itemprop="reviewBody">Покупала септик Биодевайс. Справляется с загородным домом отлично, не шумный. Спасибо за установку бригадиру Максиму.</p></div>
+									<div itemprop="review" itemscope itemtype="https://schema.org/Review">
+										<div class="slider-bottom" itemprop="itemReviewed" itemscope itemtype="https://schema.org/Organization">
+											<p itemprop="reviewBody">Покупала септик Биодевайс. Справляется с загородным домом отлично, не шумный. Спасибо за установку бригадиру Максиму.</p>
+										</div>
+									</div>
 									<a href="#" class="slider-bottom-link">
 										<img class="slider-bottom-link-img" src="./assets/img/yandex.png" alt="yandex">
 									</a>
