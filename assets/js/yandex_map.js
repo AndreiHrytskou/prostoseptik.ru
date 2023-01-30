@@ -19,8 +19,8 @@ ymaps.ready(function () {
     }),
     getPointData = function (index) {
       return {
-        balloonContentBody: "глубина скважины <strong>" + index + "</strong>",
-        clusterCaption: "метка <strong>" + index + "</strong>",
+        balloonContentBody: "<strong>" + index + "</strong>",
+        //   clusterCaption: "метка <strong>" + index + "</strong>",
       };
     },
     points = [
