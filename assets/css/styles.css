@@ -6664,12 +6664,13 @@ html, body {
   }
   .block2-middle::-webkit-scrollbar {
     width: 5px;
-    height: 8px;
+    height: 20px;
     background-color: #aaa;
   }
   .block2-middle::-webkit-scrollbar-thumb {
     background-color: #009999;
     width: 120px;
+    height: 20px;
   }
   .block2-middle-item {
     width: 100%;
