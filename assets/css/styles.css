@@ -6613,12 +6613,19 @@ html, body {
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    overflow-y: scroll;
+    overflow-x: scroll;
+    overflow-y: hidden;
     min-width: 100%;
     min-height: 280px;
+    padding-bottom: 20px;
   }
   .block2-middle::-webkit-scrollbar {
-    display: none;
+    width: 5px;
+    height: 8px;
+    background-color: #aaa;
+  }
+  .block2-middle::-webkit-scrollbar-thumb {
+    background-color: #009999;
   }
   .block2-middle-item {
     width: 100%;
@@ -6968,7 +6975,7 @@ html, body {
     padding-left: 20px;
   }
   .mySwiper2 .swiper-pagination {
-    display: none;
+    bottom: 10px;
   }
   .header__menu-discount {
     max-width: 95%;
