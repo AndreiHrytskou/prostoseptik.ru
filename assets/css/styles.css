@@ -6630,6 +6630,7 @@ html, body {
   }
   .block2-middle::-webkit-scrollbar-thumb {
     background-color: #009999;
+    width: 120px;
   }
   .block2-middle-item {
     width: 100%;
