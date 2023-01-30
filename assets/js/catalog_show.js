@@ -4,6 +4,7 @@ const filtr = document.querySelector(".filtr");
 const filtrItem = document.querySelector(".filtr__item");
 const filtrImg = document.querySelector(".filtr__img");
 let orderbyItem = document.querySelectorAll(".orderby__item");
+
 // if (filtr != undefined) {
 filtr.addEventListener("click", () => {
   orderby.classList.toggle("orderby__active");

@@ -6556,6 +6556,12 @@ html, body {
 }
 
 @media screen and (max-width: 1024px) {
+  .sidebar__form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .block2-middle-item:hover {
     -webkit-box-shadow: none;
             box-shadow: none;
