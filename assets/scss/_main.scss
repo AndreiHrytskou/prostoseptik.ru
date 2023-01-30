@@ -409,7 +409,10 @@
 	width: 280px;
 	height: 280px;
 	border-radius: 150px;
-	padding: 70px 40px;
+	padding: 40px 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-color: rgba(45, 45, 45, 0.8);
 	transition: 0.3s;
 	text-align: center;
