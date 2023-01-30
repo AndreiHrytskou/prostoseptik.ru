@@ -112,3 +112,7 @@ order.addEventListener("click", (e) => {
   e.preventDefault();
   createThank();
 });
+const btnCatalog = document.querySelector(".btn_catalog");
+btnCatalog.addEventListener("click", () => {
+  btnCatalog.innerText = "в корзине";
+});
