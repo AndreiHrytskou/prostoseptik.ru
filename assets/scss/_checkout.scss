@@ -145,6 +145,10 @@
 				display: flex;
 				align-items: center;
 				gap: 10px;
+				width: 100%;
+				label{
+					width: 100%;
+				}
 			}
 			&-second{
 				background-color: $white;
@@ -152,15 +156,20 @@
 				padding: 16px 20px;
 				display: flex;
 				align-items: center;
-				justify-content: space-between;
 				gap: 10px;
+				width: 100%;
 				label{
 					@include fonts($roboto, 14px, 400, 18px, $dark_gray);
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					width: 100%;
 				}
 				.payment-radio{
 					display: flex;
 					align-items: center;
 					gap: 10px;
+					width: 100%;
 					&-img{
 						display: flex;
 					}
