@@ -26,8 +26,14 @@ if (window.innerWidth < 1025) {
   });
 }
 const blockMiddle = document.querySelector(".block2-middle");
-blockMiddle.addEventListener("click", () => {
-  blockMiddle.classList.add("animate");
+const topBlock2 = blockMiddle.getBoundingClientRect().top;
+window.addEventListener("scroll", () => {
+  let scroll = window.scrollY;
+  console.log(scroll);
+  console.log(topBlock2 - 130);
+  if (scroll > topBlock2 - 130) {
+    blockMiddle.classList.add("animate");
+  }
 });
 // const paginat = document.querySelector(".pagination");
 // paginat.addEventListener("focus", () => {
