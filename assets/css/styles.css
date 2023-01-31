@@ -6698,6 +6698,8 @@ html, body {
   }
   .pagination:focus {
     background-color: transparent;
+    width: 0;
+    z-index: -1;
   }
   .block2-middle-item {
     width: 100%;
