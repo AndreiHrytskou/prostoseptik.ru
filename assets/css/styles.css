@@ -6683,7 +6683,17 @@ html, body {
     height: 20px;
     background-color: #aaa;
   }
+  .block2-middle::scroll {
+    width: 5px;
+    height: 20px;
+    background-color: #aaa;
+  }
   .block2-middle::-webkit-scrollbar-thumb {
+    background-color: #009999;
+    width: 120px;
+    height: 25px;
+  }
+  .block2-middle::scrollbar-thumb {
     background-color: #009999;
     width: 120px;
     height: 25px;
