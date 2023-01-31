@@ -402,24 +402,7 @@
 		 background-color: $dark_blue;
 		 width: 120px;
 		 height: 25px;
-//   display: none;
 }
-	// .pagination{
-	// 	width: 120px;
-	// 	height: 20px;
-	// 	background-color: $dark_blue;
-	// 	margin-top: -60px;
-	// }
-	// .pagination:focus{
-	// 	background-color: transparent;
-	// 	width: 0;
-	// 	z-index: -1;
-	// }
-	// .block2-middle-item{
-	// 	position: relative;
-	// 	left: 0;
-  	// 	transition: left 5s cubic-bezier(0, 0, 1, 1);
-	// }
 	.block2-middle.animate {
 		animation: .5s linear 1s alternate slidein;
 }

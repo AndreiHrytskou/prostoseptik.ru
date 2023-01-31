@@ -29,14 +29,7 @@ const blockMiddle = document.querySelector(".block2-middle");
 const topBlock2 = blockMiddle.getBoundingClientRect().top;
 window.addEventListener("scroll", () => {
   let scroll = window.scrollY;
-  console.log(scroll);
-  console.log(topBlock2 - 130);
   if (scroll > topBlock2 - 130) {
     blockMiddle.classList.add("animate");
   }
 });
-// const paginat = document.querySelector(".pagination");
-// paginat.addEventListener("focus", () => {
-//   paginat.style.zIndex = "-1";
-//   paginat.style.backgroundColor = "transparent";
-// });
