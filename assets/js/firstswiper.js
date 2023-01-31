@@ -122,30 +122,3 @@ galleryTop.on("slideChangeTransitionStart", function () {
 galleryThumbs.on("transitionStart", function () {
   galleryTop.slideTo(galleryThumbs.activeIndex);
 });
-
-// zavod
-
-// var zavodVody = new Swiper(".mySwipers2", {
-//   //   spaceBetween: 10,
-//   slidesPerView: 3,
-//   freeMode: true,
-//   watchSlidesProgress: true,
-// });
-// var zavodGallery = new Swiper(".mySwipers", {
-//   //   spaceBetween: 10,
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   thumbs: {
-//     swiper: swiper,
-//   },
-// });
-
-// let picture = document.querySelectorAll(".slider-block-list-item-img");
-// let headPic = document.querySelector(".slider-block-head-img");
-// picture.forEach((el) => {
-//   el.addEventListener("click", () => {
-//     headPic.src = el.src;
-//   });
-// });
