@@ -6696,7 +6696,7 @@ html, body {
     background-color: #009999;
     margin-top: -60px;
   }
-  .pagination:hover {
+  .pagination:focus {
     background-color: transparent;
   }
   .block2-middle-item {
