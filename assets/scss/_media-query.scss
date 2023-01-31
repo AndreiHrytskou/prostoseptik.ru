@@ -397,22 +397,21 @@
   		height: 20px;
   		background-color: #aaa;
 	}
-	.block2-middle::scroll{
-		width: 5px;
-  		height: 20px;
-  		background-color: #aaa;
-	}
 	.block2-middle::-webkit-scrollbar-thumb {
 		 background-color: $dark_blue;
 		 width: 120px;
 		 height: 25px;
 //   display: none;
 }
-.block2-middle::scrollbar-thumb{
-	 background-color: $dark_blue;
-		 width: 120px;
-		 height: 25px;
-}
+	.pagination{
+		width: 120px;
+		height: 20px;
+		background-color: $dark_blue;
+		margin-top: -60px;
+	}
+	.pagination:hover{
+		background-color: transparent;
+	}
 	.block2-middle-item{
 		width: 100%;
 		min-width: 280px;

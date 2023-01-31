@@ -6685,20 +6685,19 @@ html, body {
     height: 20px;
     background-color: #aaa;
   }
-  .block2-middle::scroll {
-    width: 5px;
-    height: 20px;
-    background-color: #aaa;
-  }
   .block2-middle::-webkit-scrollbar-thumb {
     background-color: #009999;
     width: 120px;
     height: 25px;
   }
-  .block2-middle::scrollbar-thumb {
-    background-color: #009999;
+  .pagination {
     width: 120px;
-    height: 25px;
+    height: 20px;
+    background-color: #009999;
+    margin-top: -60px;
+  }
+  .pagination:hover {
+    background-color: transparent;
   }
   .block2-middle-item {
     width: 100%;
