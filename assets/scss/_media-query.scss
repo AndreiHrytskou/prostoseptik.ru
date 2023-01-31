@@ -391,6 +391,7 @@
 		min-width: 100%;
   		min-height: 280px;
 		padding-bottom: 20px;
+		
 	}
 	.block2-middle::-webkit-scrollbar{
 		width: 5px;
@@ -403,17 +404,35 @@
 		 height: 25px;
 //   display: none;
 }
-	.pagination{
-		width: 120px;
-		height: 20px;
-		background-color: $dark_blue;
-		margin-top: -60px;
-	}
-	.pagination:focus{
-		background-color: transparent;
-		width: 0;
-		z-index: -1;
-	}
+	// .pagination{
+	// 	width: 120px;
+	// 	height: 20px;
+	// 	background-color: $dark_blue;
+	// 	margin-top: -60px;
+	// }
+	// .pagination:focus{
+	// 	background-color: transparent;
+	// 	width: 0;
+	// 	z-index: -1;
+	// }
+	// .block2-middle-item{
+	// 	position: relative;
+	// 	left: 0;
+  	// 	transition: left 5s cubic-bezier(0, 0, 1, 1);
+	// }
+	.block2-middle.animate {
+		animation: .5s linear 1s alternate slidein;
+}
+@keyframes slidein {
+  from {
+    /* pushes the sun down past the viewport */
+    transform: translateX(-20px);
+  }
+  to {
+    /* returns the sun to its default position */
+    transform: translateX(0);
+  }
+}
 	.block2-middle-item{
 		width: 100%;
 		min-width: 280px;

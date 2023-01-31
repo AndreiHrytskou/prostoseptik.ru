@@ -6690,16 +6690,33 @@ html, body {
     width: 120px;
     height: 25px;
   }
-  .pagination {
-    width: 120px;
-    height: 20px;
-    background-color: #009999;
-    margin-top: -60px;
+  .block2-middle.animate {
+    -webkit-animation: .5s linear 1s alternate slidein;
+            animation: .5s linear 1s alternate slidein;
   }
-  .pagination:focus {
-    background-color: transparent;
-    width: 0;
-    z-index: -1;
+  @-webkit-keyframes slidein {
+    from {
+      /* pushes the sun down past the viewport */
+      -webkit-transform: translateX(-20px);
+              transform: translateX(-20px);
+    }
+    to {
+      /* returns the sun to its default position */
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes slidein {
+    from {
+      /* pushes the sun down past the viewport */
+      -webkit-transform: translateX(-20px);
+              transform: translateX(-20px);
+    }
+    to {
+      /* returns the sun to its default position */
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
   }
   .block2-middle-item {
     width: 100%;

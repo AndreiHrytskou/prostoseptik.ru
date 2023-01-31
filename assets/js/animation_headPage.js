@@ -25,8 +25,12 @@ if (window.innerWidth < 1025) {
     });
   });
 }
-const paginat = document.querySelector(".pagination");
-paginat.addEventListener("focus", () => {
-  paginat.style.zIndex = "-1";
-  paginat.style.backgroundColor = "transparent";
+const blockMiddle = document.querySelector(".block2-middle");
+blockMiddle.addEventListener("click", () => {
+  blockMiddle.classList.add("animate");
 });
+// const paginat = document.querySelector(".pagination");
+// paginat.addEventListener("focus", () => {
+//   paginat.style.zIndex = "-1";
+//   paginat.style.backgroundColor = "transparent";
+// });
