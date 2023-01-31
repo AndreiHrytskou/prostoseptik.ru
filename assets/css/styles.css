@@ -6673,6 +6673,8 @@ html, body {
         -ms-flex-pack: start;
             justify-content: flex-start;
     overflow-x: scroll;
+    -ms-touch-action: cross-slide-x;
+        touch-action: cross-slide-x;
     overflow-y: hidden;
     min-width: 100%;
     min-height: 280px;

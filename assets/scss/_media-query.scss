@@ -386,6 +386,7 @@
 		flex-wrap: nowrap;
 		justify-content: flex-start;
 		overflow-x: scroll;
+		touch-action: cross-slide-x;
 		overflow-y:hidden;
 		min-width: 100%;
   		min-height: 280px;
