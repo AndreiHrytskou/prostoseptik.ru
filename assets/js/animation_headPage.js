@@ -25,3 +25,8 @@ if (window.innerWidth < 1025) {
     });
   });
 }
+const paginat = document.querySelector(".pagination");
+paginat.addEventListener("focus", () => {
+  paginat.style.zIndex = "-1";
+  paginat.style.backgroundColor = "transparent";
+});
