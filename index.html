@@ -382,14 +382,18 @@
 				<div class="review-middle">
 					<div class="swiper mySwiper2">
 						<div class="swiper-wrapper">
-								<div class="swiper-slide" >
-									<div class="swiper-top"  itemscope itemtype="https://schema.org/Review" >
+								<div class="swiper-slide" itemprop="review" itemscope itemtype="https://schema.org/Review">
+									<div class="swiper-top">
 										<span itemprop="name"></span>
 											<img class="slider-top-avatar" src="./assets/img/Zaharova.jfif" alt="avatar2">
-											<p itemprop="author" class="slider-top-name">
+											<p ititemprop="author" itemscope itemtype="https://schema.org/Person" class="slider-top-name">
+												<span itemprop="name"></span>
 												Саша Захарова
 											</p>
 									</div>
+									<span itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+										<meta itemprop="name" content="prostoseptik">
+									</span>
 									<div class="slider-middle">
 										<div class="rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
 											<div class="rating-wrapper">
