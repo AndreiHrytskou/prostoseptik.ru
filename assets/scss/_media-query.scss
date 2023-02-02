@@ -403,16 +403,16 @@
 		 width: 120px;
 		 height: 25px;
 }
-::-webkit-scrollbar {
+.block2-middle::-webkit-scrollbar {
     -webkit-appearance: none;
 }
-::-webkit-scrollbar:vertical {
+.block2-middle::-webkit-scrollbar:vertical {
     width: 12px;
 }
-::-webkit-scrollbar:horizontal {
+.block2-middle::-webkit-scrollbar:horizontal {
     height: 12px;
 }
-::-webkit-scrollbar-track {
+.block2-middle::-webkit-scrollbar-track {
     border-radius: 10px;
     background-color: #ffffff;
 }
