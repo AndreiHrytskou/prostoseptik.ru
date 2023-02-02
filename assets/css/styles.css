@@ -6679,6 +6679,7 @@ html, body {
     min-width: 100%;
     min-height: 280px;
     padding-bottom: 20px;
+    -webkit-overflow-scrolling: touch;
   }
   .block2-middle::-webkit-scrollbar {
     width: 5px;
@@ -6689,20 +6690,6 @@ html, body {
     background-color: #009999;
     width: 120px;
     height: 25px;
-  }
-  .block2-middle::-webkit-scrollbar {
-    -webkit-appearance: none;
-  }
-  .block2-middle::-webkit-scrollbar:vertical {
-    width: 12px;
-  }
-  .block2-middle::-webkit-scrollbar:horizontal {
-    height: 12px;
-  }
-  .block2-middle::-webkit-scrollbar-track {
-    -webkit-border-radius: 10px;
-            border-radius: 10px;
-    background-color: #ffffff;
   }
   .block2-middle.animate {
     -webkit-animation: .5s linear 2s alternate slidein;
