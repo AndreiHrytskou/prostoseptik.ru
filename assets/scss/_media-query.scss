@@ -403,8 +403,21 @@
 		 width: 120px;
 		 height: 25px;
 }
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+::-webkit-scrollbar:vertical {
+    width: 12px;
+}
+::-webkit-scrollbar:horizontal {
+    height: 12px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #ffffff;
+}
 	.block2-middle.animate {
-		animation: .5s linear 1s alternate slidein;
+		animation: .5s linear 2s alternate slidein;
 }
 @keyframes slidein {
   from {
