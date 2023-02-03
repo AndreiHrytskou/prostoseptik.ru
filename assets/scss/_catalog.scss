@@ -43,13 +43,18 @@
 			text-decoration: none;
 			border-radius: 5px;
 			position: relative;
-			bottom: 53px;
+			bottom: 56px;
+			height: 56px;
 			width: 100%;
 			z-index: 0;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			gap: 10px;
+			img{
+				width: 15px;
+				height: 15px;
+			}
 		}
 	}
 	a{

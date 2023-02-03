@@ -122,3 +122,28 @@ galleryTop.on("slideChangeTransitionStart", function () {
 galleryThumbs.on("transitionStart", function () {
   galleryTop.slideTo(galleryThumbs.activeIndex);
 });
+
+var swiper9 = new Swiper(".mySwiper99", {
+  slidesPerView: 4,
+  spaceBetween: 23,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    // when window width is >= 300px
+    320: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+  },
+});

@@ -33,3 +33,11 @@ window.addEventListener("scroll", () => {
     blockMiddle.classList.add("animate");
   }
 });
+
+let card = document.querySelectorAll(".card-btn");
+card.forEach((e) => {
+  e.addEventListener("click", (elem) => {
+    elem.preventDefault();
+    e.style.zIndex = "-1";
+  });
+});

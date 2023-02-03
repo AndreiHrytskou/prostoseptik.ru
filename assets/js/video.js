@@ -5,7 +5,7 @@ let heightImg;
 video.addEventListener("click", (e) => {
   e.preventDefault();
   let videoSrc = video.href;
-  let videoId = videoSrc.substr(24) + "?rel=0&autoplay=1";
+  let videoId = videoSrc.substr(17) + "?rel=0&autoplay=1";
   videoImg.style.display = "none";
   let link = "https://www.youtube.com/embed/" + videoId;
   videoFrame.src = link;
