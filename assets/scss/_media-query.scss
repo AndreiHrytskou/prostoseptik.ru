@@ -246,6 +246,13 @@
   .block-bottom-item{
 	flex-direction: row;
 	justify-content: center;
+	max-width: 90%;
+  }
+  .content{
+	flex-direction: column;
+	.content__img{
+		margin: 0 auto;
+	}
   }
   .header__menu-discount{
 	margin-left: 0;
@@ -786,7 +793,8 @@
 	}
 	.title,
 	.subtitle,
-	.product-title{
+	.product-title,
+	.blue__title{
 		font-size: 25px;
 		line-height: 28px;
 	}
