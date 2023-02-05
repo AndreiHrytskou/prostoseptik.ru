@@ -41,3 +41,15 @@ card.forEach((e) => {
     e.style.zIndex = "-1";
   });
 });
+const priceItems = document.querySelectorAll(".price-wrap");
+priceItems.forEach((e) => {
+  e.addEventListener("click", (el) => {
+    el.preventDefault();
+    e.classList.toggle("inputChecked");
+    if (e.classList.contains("inputChecked")) {
+      e.childNodes[6].childNodes[1].checked = true;
+    } else {
+      e.childNodes[6].childNodes[1].checked = false;
+    }
+  });
+});

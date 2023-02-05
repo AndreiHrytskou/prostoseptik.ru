@@ -130,10 +130,10 @@ var swiper9 = new Swiper(".mySwiper99", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
+  //   autoplay: {
+  //     delay: 5000,
+  //     disableOnInteraction: false,
+  //   },
   breakpoints: {
     // when window width is >= 300px
     320: {
