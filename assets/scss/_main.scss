@@ -624,6 +624,9 @@
 	flex-wrap: wrap;
 	gap: 20px;
 	justify-content: center;
+	.block-bottom-item-text{
+		max-width: 100%;
+	}
 }
 
 // news

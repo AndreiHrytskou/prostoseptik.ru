@@ -1861,6 +1861,10 @@ html, body {
           justify-content: center;
 }
 
+.type .block-bottom-item-text {
+  max-width: 100%;
+}
+
 .news {
   padding: 80px 0 0;
 }
