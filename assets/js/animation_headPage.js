@@ -216,14 +216,15 @@ window.addEventListener("scroll", () => {
 //   }
 // });
 const typeBlock = document.querySelectorAll(".type-bottom-item");
-const info = document.getElementById("info");
-const info1 = document.getElementById("info1");
-const info2 = document.getElementById("info2");
-const info3 = document.getElementById("info3");
-const info4 = document.getElementById("info4");
-const info5 = document.getElementById("info5");
-const info6 = document.getElementById("info6");
-const info7 = document.getElementById("info7");
+const info = document.querySelector(".item1");
+const info1 = document.querySelector(".item2");
+const info2 = document.querySelector(".item3");
+const info3 = document.querySelector(".item4");
+const info4 = document.querySelector(".item5");
+const info5 = document.querySelector(".item6");
+const info6 = document.querySelector(".item7");
+const info7 = document.querySelector(".item8");
+
 const block = document.getElementById("block");
 const block1 = document.getElementById("block1");
 const block2 = document.getElementById("block2");
@@ -235,7 +236,7 @@ const block7 = document.getElementById("block7");
 typeBlock.forEach((e) => {
   const cross = e.childNodes[7];
   info.addEventListener("click", () => {
-    if (info.id == e.childNodes[5].id) {
+    if (info.childNodes[5].id == e.childNodes[5].id) {
       block.classList.toggle("blockVisible");
       e.classList.toggle("typeActive");
       if (
@@ -259,7 +260,7 @@ typeBlock.forEach((e) => {
     });
   });
   info1.addEventListener("click", () => {
-    if (info1.id == e.childNodes[5].id) {
+    if (info1.childNodes[5].id == e.childNodes[5].id) {
       block1.classList.toggle("blockVisible");
       e.classList.toggle("typeActive");
       if (
@@ -283,7 +284,7 @@ typeBlock.forEach((e) => {
     });
   });
   info2.addEventListener("click", () => {
-    if (info2.id == e.childNodes[5].id) {
+    if (info2.childNodes[5].id == e.childNodes[5].id) {
       block2.classList.toggle("blockVisible");
       e.classList.toggle("typeActive");
       if (
@@ -307,7 +308,7 @@ typeBlock.forEach((e) => {
     });
   });
   info3.addEventListener("click", () => {
-    if (info3.id == e.childNodes[5].id) {
+    if (info3.childNodes[5].id == e.childNodes[5].id) {
       block3.classList.toggle("blockVisible");
       e.classList.toggle("typeActive");
       if (
@@ -331,7 +332,7 @@ typeBlock.forEach((e) => {
     });
   });
   info4.addEventListener("click", () => {
-    if (info4.id == e.childNodes[5].id) {
+    if (info4.childNodes[5].id == e.childNodes[5].id) {
       block4.classList.toggle("blockVisible");
       e.classList.toggle("typeActive");
       if (
@@ -355,7 +356,7 @@ typeBlock.forEach((e) => {
     });
   });
   info5.addEventListener("click", () => {
-    if (info5.id == e.childNodes[5].id) {
+    if (info5.childNodes[5].id == e.childNodes[5].id) {
       block5.classList.toggle("blockVisible");
       e.classList.toggle("typeActive");
       if (
@@ -379,7 +380,7 @@ typeBlock.forEach((e) => {
     });
   });
   info6.addEventListener("click", () => {
-    if (info6.id == e.childNodes[5].id) {
+    if (info6.childNodes[5].id == e.childNodes[5].id) {
       block6.classList.toggle("blockVisible");
       e.classList.toggle("typeActive");
       if (
@@ -403,7 +404,7 @@ typeBlock.forEach((e) => {
     });
   });
   info7.addEventListener("click", () => {
-    if (info7.id == e.childNodes[5].id) {
+    if (info7.childNodes[5].id == e.childNodes[5].id) {
       block7.classList.toggle("blockVisible");
       e.classList.toggle("typeActive");
       if (
