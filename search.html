@@ -14,7 +14,6 @@
 	<script src="./assets/js/swiper.js" defer></script>
 	<script src="./assets/js/search.js" defer></script>
 	<script src="./assets/js/animate_catalog.js" defer></script>
-	<script src="./assets/js/sidebar.js" defer></script>
 	<title>Поиск</title>
 </head>
 
@@ -160,10 +159,6 @@
 				<div class="catalog-page-block search__name">
 					<p class="sort">Найдено:</p>
 						<span class="filtr__item">6 товаров</span>
-				</div>
-				<div class="sidebar-hide sidebar__page">
-					<p>Фильтры</p>
-					<img src="./assets/img/whitetiangle.png" alt="whitetiangle">
 				</div>
 				<div class="wrap">
 					<div class="wrap_container">
@@ -423,108 +418,6 @@
 								</div>
 							</li>
 						</ul>
-					</div>
-					<div class="sidebar">
-						<form class="sidebar__form" action="#">
-							<div class="manufacturer">
-								<p class="manufacturer-title">Производитель</p>
-								<div class="manufacturer__block">
-									<span class="manufacturer__item">Выберите</span>
-									<img class="manufacturer__img" src="./assets/img/bxs_down-arrow.png" alt="arrow">
-								</div>
-								<ul class="manufacturer-select" name="select" id="select">
-									<li class="manufacturer-select-item">
-										<input type="checkbox" name="astra" id="astra">
-										<label for="astra">Астра (45)</label>
-									</li>
-									<li class="manufacturer-select-item">
-										<input type="checkbox" name="pro" id="pro">
-										<label for="pro">Евролос ПРО (45)</label>
-									</li>
-									<li class="manufacturer-select-item">
-										<input type="checkbox" name="bio" id="bio">
-										<label for="bio">Евролос БИО (45)</label>
-									</li>
-									<li class="manufacturer-select-item">
-										<input type="checkbox" name="topas1" id="topas1">
-										<label for="topas1">Топас однокопресорный (45)</label>
-									</li>
-									<li class="manufacturer-select-item">
-										<input type="checkbox" name="topas2" id="topas2">
-										<label for="topas2">Топас двухкомпресорный (45)</label>
-									</li>
-									</select>
-							</div>
-							<div class="amountperson">
-								<p class="amountperson-title">Число пользователей</p>
-								<div class="amountperson-block">
-									<div class="amountperson-block-count">
-										<span id="range1" class="amountperson-min">0</span>
-										<span class="line"></span>
-										<span id="range2" class="amountperson-max">100</span>
-									</div>
-									<div class="amountperson-ranges">
-										<div class="slider-track"></div>
-										<input type="range" class="range-min" min="1" max="100" value="10" id="slider-1"
-											oninput="slideOne()">
-										<input type="range" class="range-max" min="1" max="100" value="90" id="slider-2"
-											oninput="slideTwo()">
-									</div>
-								</div>
-							</div>
-							<div class="amountperson">
-								<p class="amountperson-title">Количество сантехники</p>
-								<div class="amountperson-block">
-									<div class="amountperson-block-count">
-										<span id="range3" class="amountperson-min">0</span>
-										<span class="line"></span>
-										<span id="range4" class="amountperson-max">100</span>
-									</div>
-									<div class="amountperson-ranges">
-										<div class="slider-track2"></div>
-										<input type="range" class="range-min" min="1" max="100" value="20" id="slider-3"
-											oninput="slideThree()">
-										<input type="range" class="range-max" min="1" max="100" value="40" id="slider-4"
-											oninput="slideFour()">
-									</div>
-								</div>
-							</div>
-							<div class="amountperson">
-								<p class="amountperson-title">Тип отвода очищенных стоков</p>
-								<div class="clear-list">
-									<div class="clear-list-item">
-										<input type="checkbox" name="item1" id="item1">
-										<label for="item1">
-											<span>Самотечный</span>
-										</label>
-									</div>
-									<div class="clear-list-item">
-										<input type="checkbox" name="item2" id="item2">
-										<label for="item2">
-											<span>Принудительный</span>
-										</label>
-									</div>
-								</div>
-							</div>
-							<div class="amountperson">
-								<p class="amountperson-title">Цена</p>
-								<div class="amountperson-block">
-									<div class="amountperson-block-count">
-										<span id="range5" class="amountperson-min">0</span>
-										<span class="line"></span>
-										<span id="range6" class="amountperson-max">100</span>
-									</div>
-									<div class="amountperson-ranges">
-										<div class="slider-track3"></div>
-										<input type="range" class="range-min" min="1" max="10000000" value="2000000" id="slider-5"
-											oninput="slideFive()">
-										<input type="range" class="range-max" min="1" max="10000000" value="4000000" id="slider-6"
-											oninput="slideSix()">
-									</div>
-								</div>
-							</div>
-							<input class='show' type="submit" value="Показать">
-						</form>
 					</div>
 				</div>
 			</div>

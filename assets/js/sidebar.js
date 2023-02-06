@@ -88,3 +88,51 @@ function fillColor3() {
   percent6 = (slider6.value / sliderMaxValue3) * 100;
   sliderTrack3.style.background = `linear-gradient(to right, #dadae5 ${percent5}% , #3264fe ${percent5}% , #3264fe ${percent6}%, #dadae5 ${percent6}%)`;
 }
+//sidebar show
+const sidebar = document.querySelector(".sidebar");
+const showSidebar = document.querySelector(".sidebar-hide");
+const showForm = document.querySelector(".sidebar__form");
+showSidebar.addEventListener("click", () => {
+  sidebar.classList.toggle("sidebar-show");
+});
+let listProd = {};
+
+document.addEventListener("click", (e) => {
+  e.stopPropagation();
+  let target = e.target;
+  let its_menu = target == showSidebar || showSidebar.contains(target);
+  let its_showForm = target == showForm || showForm.contains(target);
+  if (!its_menu && !its_showForm) {
+    sidebar.classList.remove("sidebar-show");
+  }
+});
+const manufacturer = document.querySelector(".manufacturer__block");
+const select = document.querySelector(".manufacturer-select");
+manufacturer.addEventListener("click", () => {
+  manufacturer.classList.toggle("manufacturer__active");
+  select.classList.toggle("select__active");
+});
+document.addEventListener("click", (e) => {
+  e.stopPropagation();
+  let target = e.target;
+  let its_menu = target == manufacturer || manufacturer.contains(target);
+  let its_select = target == select || select.contains(target);
+  if (!its_menu && !its_select) {
+    manufacturer.classList.remove("manufacturer__active");
+    select.classList.remove("select__active");
+  }
+});
+
+let amountProduct = document.querySelectorAll(".cart_item");
+let amountProd = [];
+catalog.forEach((el) => {
+  amountProd.push(el);
+  return amountProd;
+});
+amountProd.forEach((el) => {
+  el.style.display = "none";
+});
+let newArr = amountProd.slice(0, 6);
+newArr.forEach((e) => {
+  e.style.display = "flex";
+});

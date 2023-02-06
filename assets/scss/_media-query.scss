@@ -493,7 +493,7 @@
 			max-width: 100%;
 		}
 	}
-	.textblock-wrap-container, .textblock-wrap-container:nth-last-child(2), .textblock-wrap:nth-child(even) .textblock-wrap-container{
+	.textblock-wrap-container, .textblock-wrap-container:nth-child(2), .textblock-wrap:nth-child(even) .textblock-wrap-container{
 		flex-direction: column-reverse;
 		align-items: center;
 	}
@@ -644,6 +644,15 @@
 	.container__screen{
 		max-width: 95%;
 		margin: auto;
+	}
+	.mySwiper100{
+		.swiper-wrapper{
+			flex-direction: column;
+		}
+	}
+	.city-list{
+		flex-direction: column;
+		align-items: flex-start;
 	}
 	.type{
 		flex-direction: column;
