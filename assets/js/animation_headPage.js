@@ -62,24 +62,368 @@ window.addEventListener("scroll", () => {
   }
 });
 
-const info = document.querySelectorAll(".info");
+// const typeBlock = document.querySelectorAll(".type-bottom-item");
+// info.addEventListener("click", () => {
+//   block.classList.toggle("blockVisible");
+//   let parent = info.parentNode;
+//   parent.classList.toggle("typeActive");
+//   let cross = parent.childNodes[7];
+//   cross.addEventListener("click", () => {
+//     parent.classList.remove("typeActive");
+//     block.classList.remove("blockVisible");
+//   });
+//   if (block.classList.contains("blockVisible")) {
+//     block1.classList.remove("blockVisible");
+//     block2.classList.remove("blockVisible");
+//     block3.classList.remove("blockVisible");
+//     block4.classList.remove("blockVisible");
+//     block5.classList.remove("blockVisible");
+//     block6.classList.remove("blockVisible");
+//     block7.classList.remove("blockVisible");
+//   }
+// });
+// info1.addEventListener("click", () => {
+//   block1.classList.toggle("blockVisible");
+//   let parent = info1.parentNode;
+//   parent.classList.toggle("typeActive");
+//   let cross = parent.childNodes[7];
+//   cross.addEventListener("click", () => {
+//     parent.classList.remove("typeActive");
+//     block1.classList.remove("blockVisible");
+//   });
+//   if (block1.classList.contains("blockVisible")) {
+//     block.classList.remove("blockVisible");
+//     block2.classList.remove("blockVisible");
+//     block3.classList.remove("blockVisible");
+//     block4.classList.remove("blockVisible");
+//     block5.classList.remove("blockVisible");
+//     block6.classList.remove("blockVisible");
+//     block7.classList.remove("blockVisible");
+//   }
+// });
+// info2.addEventListener("click", () => {
+//   block2.classList.toggle("blockVisible");
+//   let parent = info2.parentNode;
+//   parent.classList.toggle("typeActive");
+//   let cross = parent.childNodes[7];
+//   cross.addEventListener("click", () => {
+//     parent.classList.remove("typeActive");
+//     block2.classList.remove("blockVisible");
+//   });
+//   if (block2.classList.contains("blockVisible")) {
+//     block.classList.remove("blockVisible");
+//     block1.classList.remove("blockVisible");
+//     block3.classList.remove("blockVisible");
+//     block4.classList.remove("blockVisible");
+//     block5.classList.remove("blockVisible");
+//     block6.classList.remove("blockVisible");
+//     block7.classList.remove("blockVisible");
+//   }
+// });
+// info3.addEventListener("click", () => {
+//   block3.classList.toggle("blockVisible");
+//   let parent = info3.parentNode;
+//   parent.classList.toggle("typeActive");
+//   let cross = parent.childNodes[7];
+//   cross.addEventListener("click", () => {
+//     parent.classList.remove("typeActive");
+//     block3.classList.remove("blockVisible");
+//   });
+//   if (block3.classList.contains("blockVisible")) {
+//     block.classList.remove("blockVisible");
+//     block1.classList.remove("blockVisible");
+//     block2.classList.remove("blockVisible");
+//     block4.classList.remove("blockVisible");
+//     block5.classList.remove("blockVisible");
+//     block6.classList.remove("blockVisible");
+//     block7.classList.remove("blockVisible");
+//   }
+// });
+// info4.addEventListener("click", () => {
+//   block4.classList.toggle("blockVisible");
+//   let parent = info4.parentNode;
+//   parent.classList.toggle("typeActive");
+//   let cross = parent.childNodes[7];
+//   cross.addEventListener("click", () => {
+//     parent.classList.remove("typeActive");
+//     block4.classList.remove("blockVisible");
+//   });
+//   if (block4.classList.contains("blockVisible")) {
+//     block.classList.remove("blockVisible");
+//     block2.classList.remove("blockVisible");
+//     block1.classList.remove("blockVisible");
+//     block3.classList.remove("blockVisible");
+//     block5.classList.remove("blockVisible");
+//     block6.classList.remove("blockVisible");
+//     block7.classList.remove("blockVisible");
+//   }
+// });
+// info5.addEventListener("click", () => {
+//   block5.classList.toggle("blockVisible");
+//   let parent = info5.parentNode;
+//   parent.classList.toggle("typeActive");
+//   let cross = parent.childNodes[7];
+//   cross.addEventListener("click", () => {
+//     parent.classList.remove("typeActive");
+//     block5.classList.remove("blockVisible");
+//   });
+//   if (block5.classList.contains("blockVisible")) {
+//     block.classList.remove("blockVisible");
+//     block1.classList.remove("blockVisible");
+//     block2.classList.remove("blockVisible");
+//     block3.classList.remove("blockVisible");
+//     block4.classList.remove("blockVisible");
+//     block6.classList.remove("blockVisible");
+//     block7.classList.remove("blockVisible");
+//   }
+// });
+// info6.addEventListener("click", () => {
+//   block6.classList.toggle("blockVisible");
+//   let parent = info6.parentNode;
+//   parent.classList.toggle("typeActive");
+//   let cross = parent.childNodes[7];
+//   cross.addEventListener("click", () => {
+//     parent.classList.remove("typeActive");
+//     block6.classList.remove("blockVisible");
+//   });
+//   if (block6.classList.contains("blockVisible")) {
+//     block.classList.remove("blockVisible");
+//     block1.classList.remove("blockVisible");
+//     block2.classList.remove("blockVisible");
+//     block3.classList.remove("blockVisible");
+//     block4.classList.remove("blockVisible");
+//     block5.classList.remove("blockVisible");
+//     block7.classList.remove("blockVisible");
+//   }
+// });
+// info7.addEventListener("click", () => {
+//   block7.classList.toggle("blockVisible");
+//   let parent = info7.parentNode;
+//   parent.classList.toggle("typeActive");
+//   let cross = parent.childNodes[7];
+//   cross.addEventListener("click", () => {
+//     parent.classList.remove("typeActive");
+//     block7.classList.remove("blockVisible");
+//   });
+//   if (block7.classList.contains("blockVisible")) {
+//     block.classList.remove("blockVisible");
+//     block2.classList.remove("blockVisible");
+//     block1.classList.remove("blockVisible");
+//     block3.classList.remove("blockVisible");
+//     block4.classList.remove("blockVisible");
+//     block5.classList.remove("blockVisible");
+//     block6.classList.remove("blockVisible");
+//   }
+// });
 const typeBlock = document.querySelectorAll(".type-bottom-item");
-info.forEach((e) => {
-  e.addEventListener("click", () => {
-    e.parentElement.classList.toggle("typeVisible");
-    document.addEventListener("click", (b) => {
-      b.stopPropagation();
-      let target = b.target;
-      let child;
-      typeBlock.forEach((el) => {
-        child = el.childNodes[9];
-      });
-      let its_menu = target == child;
-      let its_info = target == e;
-      let menu_is_active = e.parentElement.classList.contains("typeVisible");
-      if (!its_menu && !its_info && menu_is_active) {
-        e.parentElement.classList.toggle("typeVisible");
+const info = document.getElementById("info");
+const info1 = document.getElementById("info1");
+const info2 = document.getElementById("info2");
+const info3 = document.getElementById("info3");
+const info4 = document.getElementById("info4");
+const info5 = document.getElementById("info5");
+const info6 = document.getElementById("info6");
+const info7 = document.getElementById("info7");
+const block = document.getElementById("block");
+const block1 = document.getElementById("block1");
+const block2 = document.getElementById("block2");
+const block3 = document.getElementById("block3");
+const block4 = document.getElementById("block4");
+const block5 = document.getElementById("block5");
+const block6 = document.getElementById("block6");
+const block7 = document.getElementById("block7");
+typeBlock.forEach((e) => {
+  const cross = e.childNodes[7];
+  info.addEventListener("click", () => {
+    if (info.id == e.childNodes[5].id) {
+      block.classList.toggle("blockVisible");
+      e.classList.toggle("typeActive");
+      if (
+        block.classList.contains("blockVisible") &&
+        e.classList.contains("typeActive")
+      ) {
+        block1.classList.remove("blockVisible");
+        block2.classList.remove("blockVisible");
+        block3.classList.remove("blockVisible");
+        block4.classList.remove("blockVisible");
+        block5.classList.remove("blockVisible");
+        block6.classList.remove("blockVisible");
+        block7.classList.remove("blockVisible");
       }
+    } else {
+      e.classList.remove("typeActive");
+    }
+    cross.addEventListener("click", () => {
+      e.classList.remove("typeActive");
+      block.classList.remove("blockVisible");
+    });
+  });
+  info1.addEventListener("click", () => {
+    if (info1.id == e.childNodes[5].id) {
+      block1.classList.toggle("blockVisible");
+      e.classList.toggle("typeActive");
+      if (
+        block1.classList.contains("blockVisible") &&
+        e.classList.contains("typeActive")
+      ) {
+        block.classList.remove("blockVisible");
+        block2.classList.remove("blockVisible");
+        block3.classList.remove("blockVisible");
+        block4.classList.remove("blockVisible");
+        block5.classList.remove("blockVisible");
+        block6.classList.remove("blockVisible");
+        block7.classList.remove("blockVisible");
+      }
+    } else {
+      e.classList.remove("typeActive");
+    }
+    cross.addEventListener("click", () => {
+      e.classList.remove("typeActive");
+      block1.classList.remove("blockVisible");
+    });
+  });
+  info2.addEventListener("click", () => {
+    if (info2.id == e.childNodes[5].id) {
+      block2.classList.toggle("blockVisible");
+      e.classList.toggle("typeActive");
+      if (
+        block2.classList.contains("blockVisible") &&
+        e.classList.contains("typeActive")
+      ) {
+        block.classList.remove("blockVisible");
+        block1.classList.remove("blockVisible");
+        block3.classList.remove("blockVisible");
+        block4.classList.remove("blockVisible");
+        block5.classList.remove("blockVisible");
+        block6.classList.remove("blockVisible");
+        block7.classList.remove("blockVisible");
+      }
+    } else {
+      e.classList.remove("typeActive");
+    }
+    cross.addEventListener("click", () => {
+      e.classList.remove("typeActive");
+      block2.classList.remove("blockVisible");
+    });
+  });
+  info3.addEventListener("click", () => {
+    if (info3.id == e.childNodes[5].id) {
+      block3.classList.toggle("blockVisible");
+      e.classList.toggle("typeActive");
+      if (
+        block3.classList.contains("blockVisible") &&
+        e.classList.contains("typeActive")
+      ) {
+        block.classList.remove("blockVisible");
+        block1.classList.remove("blockVisible");
+        block2.classList.remove("blockVisible");
+        block4.classList.remove("blockVisible");
+        block5.classList.remove("blockVisible");
+        block6.classList.remove("blockVisible");
+        block7.classList.remove("blockVisible");
+      }
+    } else {
+      e.classList.remove("typeActive");
+    }
+    cross.addEventListener("click", () => {
+      e.classList.remove("typeActive");
+      block3.classList.remove("blockVisible");
+    });
+  });
+  info4.addEventListener("click", () => {
+    if (info4.id == e.childNodes[5].id) {
+      block4.classList.toggle("blockVisible");
+      e.classList.toggle("typeActive");
+      if (
+        block4.classList.contains("blockVisible") &&
+        e.classList.contains("typeActive")
+      ) {
+        block.classList.remove("blockVisible");
+        block1.classList.remove("blockVisible");
+        block2.classList.remove("blockVisible");
+        block3.classList.remove("blockVisible");
+        block5.classList.remove("blockVisible");
+        block6.classList.remove("blockVisible");
+        block7.classList.remove("blockVisible");
+      }
+    } else {
+      e.classList.remove("typeActive");
+    }
+    cross.addEventListener("click", () => {
+      e.classList.remove("typeActive");
+      block4.classList.remove("blockVisible");
+    });
+  });
+  info5.addEventListener("click", () => {
+    if (info5.id == e.childNodes[5].id) {
+      block5.classList.toggle("blockVisible");
+      e.classList.toggle("typeActive");
+      if (
+        block5.classList.contains("blockVisible") &&
+        e.classList.contains("typeActive")
+      ) {
+        block1.classList.remove("blockVisible");
+        block.classList.remove("blockVisible");
+        block2.classList.remove("blockVisible");
+        block3.classList.remove("blockVisible");
+        block4.classList.remove("blockVisible");
+        block6.classList.remove("blockVisible");
+        block7.classList.remove("blockVisible");
+      }
+    } else {
+      e.classList.remove("typeActive");
+    }
+    cross.addEventListener("click", () => {
+      e.classList.remove("typeActive");
+      block5.classList.remove("blockVisible");
+    });
+  });
+  info6.addEventListener("click", () => {
+    if (info6.id == e.childNodes[5].id) {
+      block6.classList.toggle("blockVisible");
+      e.classList.toggle("typeActive");
+      if (
+        block6.classList.contains("blockVisible") &&
+        e.classList.contains("typeActive")
+      ) {
+        block.classList.remove("blockVisible");
+        block1.classList.remove("blockVisible");
+        block2.classList.remove("blockVisible");
+        block3.classList.remove("blockVisible");
+        block4.classList.remove("blockVisible");
+        block5.classList.remove("blockVisible");
+        block7.classList.remove("blockVisible");
+      }
+    } else {
+      e.classList.remove("typeActive");
+    }
+    cross.addEventListener("click", () => {
+      e.classList.remove("typeActive");
+      block6.classList.remove("blockVisible");
+    });
+  });
+  info7.addEventListener("click", () => {
+    if (info7.id == e.childNodes[5].id) {
+      block7.classList.toggle("blockVisible");
+      e.classList.toggle("typeActive");
+      if (
+        block7.classList.contains("blockVisible") &&
+        e.classList.contains("typeActive")
+      ) {
+        block.classList.remove("blockVisible");
+        block1.classList.remove("blockVisible");
+        block2.classList.remove("blockVisible");
+        block3.classList.remove("blockVisible");
+        block4.classList.remove("blockVisible");
+        block5.classList.remove("blockVisible");
+        block6.classList.remove("blockVisible");
+      }
+    } else {
+      e.classList.remove("typeActive");
+    }
+    cross.addEventListener("click", () => {
+      e.classList.remove("typeActive");
+      block7.classList.remove("blockVisible");
     });
   });
 });

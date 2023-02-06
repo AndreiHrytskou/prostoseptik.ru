@@ -645,6 +645,61 @@
 		max-width: 95%;
 		margin: auto;
 	}
+	.type{
+		flex-direction: column;
+	}
+	.type-bottom-item{
+		max-width: 100%;
+	}
+	#block{
+		order: 2;
+	}
+	.item1{
+		order: 1;
+	}
+	#block1{
+		order: 4;
+	}
+	.item2{
+		order: 3;
+	}
+	#block2{
+		order: 6;
+	}
+	.item3{
+		order: 5;
+	}
+	#block3{
+		order: 8;
+	}
+	.item4{
+		order: 7;
+	}
+		#block4{
+		order: 10;
+	}
+	.item5{
+		order: 9;
+	}
+	#block5{
+		order: 12;
+	}
+	.item6{
+		order: 11;
+	}
+	#block6{
+		order: 14;
+	}
+	.item7{
+		order: 13;
+	}
+	#block7{
+		order: 16;
+	}
+	.item8{
+		order: 15;
+	}
+	
 	.thanks{
 		width: 95%;
 		margin: 0 auto;
