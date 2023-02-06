@@ -310,6 +310,7 @@
 			flex-direction: column;
 			align-items: center;
 			gap: 15px;
+			position: relative;
 			&-img{
 				padding: 10px;
 				width: 52px;
@@ -400,6 +401,83 @@
 		}
 	}
 }
+.info{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+}
+.cross{
+	display: none;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+}
+.type-bottom-item {
+    max-width: 23%;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+.info-block{
+	display: none;
+	position: absolute;
+	padding: 30px;
+	border-radius: 5px;
+   left: 0;
+	right: auto;
+   bottom: -91px;
+	background-color: $white;
+	z-index: 20;
+	ul{
+		position: relative;
+		z-index: 100;
+		width: 100%;
+		display: flex;
+		gap: 70px;
+		margin-block-start: 0;
+		list-style: none;
+		li{
+			width: max-content;
+			display: flex;
+			a{
+				text-decoration: none;
+				@include fonts($roboto, 16px, 400, 21px, $dark_blue);
+				text-align: center;
+		}
+		}
+	}
+}
+.typeVisible {
+	.info-block{
+		display: flex;
+	}
+	
+	.info{
+		display: none;
+	}
+	.cross{
+		display: block;
+	}
+}
+.typeVisible:nth-child(4),
+	.typeVisible:nth-child(8){
+		.info-block{
+			left: auto;
+			right: 0;
+		}
+	}
 .block__hide{
 	overflow: hidden;
 	transform: rotateY(180deg);
@@ -661,6 +739,9 @@
 		gap: 20px;
 		&__text{
 			width: 100%;
+			.textblock-text:first-child{
+				margin-top: 0;
+			}
 		}
 		&__img{
 			max-width: 546px;
@@ -771,7 +852,14 @@
 	.blue__title{
 		@include fonts($comfortaa, 35px, 700, 39px, $white);
 	}
+	.type_country{
+		transform: translateX(-1000%);
+		transition: 0.5s;
+	}
 // posts
+.mySwiper99{
+	margin-top: 30px;
+}
 .mySwiper3{
 	.swiper-slide{
 		gap: 23px;

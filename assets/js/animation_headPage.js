@@ -53,3 +53,33 @@ priceItems.forEach((e) => {
     }
   });
 });
+const type = document.querySelector(".type_country");
+window.addEventListener("scroll", () => {
+  type.getBoundingClientRect();
+  if (window.pageYOffset > type.offsetTop - 500) {
+    type.style.transform = "translateX(0)";
+    type.style.transition = "0.5s";
+  }
+});
+
+const info = document.querySelectorAll(".info");
+const typeBlock = document.querySelectorAll(".type-bottom-item");
+info.forEach((e) => {
+  e.addEventListener("click", () => {
+    e.parentElement.classList.toggle("typeVisible");
+    document.addEventListener("click", (b) => {
+      b.stopPropagation();
+      let target = b.target;
+      let child;
+      typeBlock.forEach((el) => {
+        child = el.childNodes[9];
+      });
+      let its_menu = target == child;
+      let its_info = target == e;
+      let menu_is_active = e.parentElement.classList.contains("typeVisible");
+      if (!its_menu && !its_info && menu_is_active) {
+        e.parentElement.classList.toggle("typeVisible");
+      }
+    });
+  });
+});
