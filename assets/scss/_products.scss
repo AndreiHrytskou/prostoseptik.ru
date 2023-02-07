@@ -139,6 +139,12 @@
 		flex-direction: column;
 		gap: 25px;
 		&-top{
+			.checbox_product{
+				max-width: 250px;
+				background-color: rgba(240, 247, 255, 1);
+				padding: 10px;
+				border-radius: 10px;
+			}
 			&-price{
 				@include fonts($roboto, 25px, 400, 32px, $dark_gray);
 				margin-bottom: 12px;
@@ -368,5 +374,45 @@
 		top: 10px;
 		right: 10px;
 		font-family: $comfortaa;
+	}
+}
+.need{
+	margin-top: 20px;
+	position: relative;
+	display: flex;
+	padding: 30px;
+	border-radius: 10px;
+	background-color: $white;
+	align-items: center;
+	justify-content: center;
+	&_wrap{
+		max-width: 251px;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		gap: 10px;
+	}
+	&__text{
+		@include fonts($roboto, 18px, 400, 27px, $dark_gray);
+		&-descriptions{
+			@include fonts($roboto, 14px, 400, 18px, $dark_gray);
+		}
+	}
+	&__number{
+		@include fonts($roboto, 16px, 700, 16px, $dark_blue);
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+	}
+	&__img{
+		position: absolute;
+		bottom: 0;
+	}
+	.left{
+		left: 40px;
+	}
+	.right{
+		right: 40px;
 	}
 }

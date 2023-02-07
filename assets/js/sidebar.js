@@ -125,6 +125,7 @@ document.addEventListener("click", (e) => {
 
 let amountProduct = document.querySelectorAll(".cart_item");
 let amountProd = [];
+let catalog = document.querySelectorAll(".product");
 catalog.forEach((el) => {
   amountProd.push(el);
   return amountProd;
@@ -135,4 +136,12 @@ amountProd.forEach((el) => {
 let newArr = amountProd.slice(0, 6);
 newArr.forEach((e) => {
   e.style.display = "flex";
+});
+const hide = document.querySelector(".hide");
+const textHide = document.querySelectorAll(".text-hide");
+hide.addEventListener("click", () => {
+  hide.style.display = "none";
+  textHide.forEach((e) => {
+    e.style.display = "block";
+  });
 });

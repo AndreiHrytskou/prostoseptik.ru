@@ -461,3 +461,20 @@ input[type="range"]:active::-webkit-slider-thumb{
 	cursor: pointer;
 }
 }
+.hide{
+	@include fonts($roboto, 16px, 700, 16px, $dark_blue);
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-decoration-line: underline;
+	text-transform: uppercase;
+	border: none;
+	background-color: transparent;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.text-hide{
+	display: none;
+}
+.catalog_text{
+	margin-bottom: 80px;
+}
