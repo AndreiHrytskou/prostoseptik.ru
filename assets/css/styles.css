@@ -1622,7 +1622,6 @@ html, body {
 #block3, #block7 {
   -webkit-border-radius: 5px 0 5px 5px;
           border-radius: 5px 0 5px 5px;
-  left: -0.5px;
 }
 
 .block2-middle-item:hover {
