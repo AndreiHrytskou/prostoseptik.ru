@@ -146,6 +146,7 @@
 			&-title{
 				@include fonts($roboto, 12px, 400, 16px, $dark_gray);
 				max-width: 135px;
+				text-align: left;
 			}
 			&-num{
 				@include fonts($roboto, 14px, 400, 18px, $dark_gray);
