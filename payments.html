@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="ru-ru">
 
 <head>
@@ -11,8 +10,10 @@
 	<link rel="shortcut icon" href="./assets/img/favicon/favicon.ico" type="image/x-icon">
 	<script src="./assets/js/menu.js" defer></script>
 	<script src="./assets/js/burger.js" defer></script>
+	<script src="./assets/js/swiper.js" defer></script>
 	<script src="./assets/js/search.js" defer></script>
-	<title>Contacts</title>
+	<script src="./assets/js/animate_catalog.js" defer></script>
+	<title>Оплата</title>
 </head>
 
 <body>
@@ -53,24 +54,22 @@
 						<a href="./contacts.html" class="header__menu-list-item">Контакты</a>
 						<a href="./news.html" class="header__menu-list-item">Новости</a>
 						<div class="footer__contacts-social-list">
-							<a href="https://vk.com/pro100septik" target="_blank" class="footer__contacts-social-list-item"><img
-									class="footer__contacts-social-list-item-img" src="./assets/img/cib_vk.png" alt="vk">
+							<a href="https://vk.com/pro100septik" target="_blank"
+								class="footer__contacts-social-list-item"><img class="footer__contacts-social-list-item-img"
+									src="./assets/img/cib_vk.png" alt="vk">
 							</a>
-							<a href="https://dzen.ru/id/5e8af41943499365394eaf97" target="_blank" class="footer__contacts-social-list-item"><img
-									class="footer__contacts-social-list-item-img" src="./assets/img/Yandex_Zen_logo1.png"
-									alt="Yandex_Zen_logo">
+							<a href="https://dzen.ru/id/5e8af41943499365394eaf97" target="_blank"
+								class="footer__contacts-social-list-item"><img class="footer__contacts-social-list-item-img"
+									src="./assets/img/Yandex_Zen_logo1.png" alt="Yandex_Zen_logo">
 							</a>
-							<a href="https://www.youtube.com/@pro100septik" target="_blank" class="footer__contacts-social-list-item"><img
-									class="footer__contacts-social-list-item-img" src="./assets/img/fa_youtube-square.png"
-									alt="youtube">
+							<a href="https://www.youtube.com/@pro100septik" target="_blank"
+								class="footer__contacts-social-list-item"><img class="footer__contacts-social-list-item-img"
+									src="./assets/img/fa_youtube-square.png" alt="youtube">
 							</a>
-							<a href="https://rutube.ru/channel/24634604/" target="_blank" class="footer__contacts-social-list-item"><img
-									class="footer__contacts-social-list-item-img" src="./assets/img/rutubelogo.png" alt="rutube">
+							<a href="https://rutube.ru/channel/24634604/" target="_blank"
+								class="footer__contacts-social-list-item"><img class="footer__contacts-social-list-item-img"
+									src="./assets/img/rutubelogo.png" alt="rutube">
 							</a>
-						</div>
-						<div class="header__menu-discount">
-							<img class="header__menu-discount-img" src="./assets/img/Frame4.png" alt="discount_img">
-							<p class="header__menu-discount-text">Скидка 10%</p>
 						</div>
 					</div>
 					<button class="header__menu-search">
@@ -94,11 +93,12 @@
 				<p class="title">Корзина</p>
 				<div class="cart-wrap-block">
 					<div class="product-thumbnail">
-						<a href="#"><img class="product-thumbnail-img" src="./assets/img/Rectangle154.webp" alt="Rectangle"></a>
+						<a href="#"><img loading="lazy" class="product-thumbnail-img" src="./assets/img/Rectangle154.webp"
+								alt="Rectangle"></a>
 					</div>
 					<div class="cart-wrap-block-name">
 						<span class="product-name"><a href="./single-product.html">Септик Евролос Эко 3</a></span>
-						<span class="product-price">156 525 ₽</span>
+						<span class="product-price">156 525 ₽</span>
 					</div>
 					<div class="product-quantity">
 						<span class="minus">-</span>
@@ -148,97 +148,92 @@
 		</div>
 	</div>
 	<!--end header-->
-<main class="main">
-	<div class="wrapper">
-		<div class="container container__screen">
-			<div class="bread-band" itemscope="" itemtype="http://schema.org/BreadcrumbList">
-				<div itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-					<a href="./index.html" class="bread-link" itemprop="item">
-						<span itemprop="name">Главная</span>
-						<meta itemprop="position" content="1">
-					</a>
-					<span class="bread-sep">-</span>
-					<span class="bread-text">Контакты</span>
+	<main class="main">
+		<div class="wrapper">
+			<div class="container container__screen bread-band">
+				<h1 class="page-title title__indent-top">Способы оплаты</h1>
+			</div>
+		</div>
+		<div class="wrapper">
+			<div class="container container__screen">
+				<div class=" wrapper_grey textblock">
+					<div class="white-block">
+						<p class="title">Наличными</p>
+						<p class="textblock-text">Вы можете оплатить септик наличными, если приедете к нам в офис или закажете выезд специалиста.</p>
+					</div>
+					<div class="white-block">
+						<p class="title">Перевод на карту «СберБанка»</p>
+						<p class="textblock-text">Для оплаты заказа на банковскую карту мы сообщаем вам номер карты и ФИО получателя. Как правило, зачисление денег
+						на банковскую карту осуществляется мгновенно. При зачислении денежных средств на нашу банковскую карту мы сообщаем
+						вам об этом.</p>
+					</div>
+					<div class="white-block">
+						<p class="title short">Онлайн оплата банковской картой: Visa, Mastercard, Maestro, Мир</p>
+						<p class="textblock-text">Для оплаты заказа кредитной или дебетовой картой Visa, Mastercard, Maestro, Мир мы отправляем форму оплаты
+						вам на электронную почту. Как правило, зачисление денег на счёт осуществляется мгновенно. При получении денежных средств
+						на наш счёт мы сообщаем вам об этом.</p>
+						<span class="payment-radio-img">
+							<img src="./assets/img/VISA.png" alt="Visa_2021">
+							<img src="./assets/img/Mastercard.png" alt="Mastercard">
+							<img src="./assets/img/Maestro.png" alt="maestro">
+							<img src="./assets/img/Мир.png" alt="Mir">
+						</span>
+					</div>
+					<div class="white-block">
+						<p class="title">Безналичный расчет</p>
+						<p class="textblock-text">Для оплаты заказа по безналичному расчёту нам необходимы реквизиты вашей компании или паспортные данные (в случае заказа
+						на частное лицо), которые вы можете направить нам на электронную почту: zakaz@pro100septik.ru. Для осуществления платежа
+						этим способом вам не обязательно иметь открытый счёт в банке. На Вашу электронную почту мы отправим счёт для оплаты.</p>
+						<p class="textblock-text">С распечатанным счётом нужно посетить ближайшее отделение любого банка и произвести оплату. Как правило, зачисление
+						денег на расчётный счёт осуществляется в течение 1–2 банковских дней. Для ускорения обработки вашего заказа вышлите скан
+						или фото платежа на нашу электронную почту: zakaz@pro100septik.ru. При получении денежных средств на наш расчётный счёт
+						наш менеджер связывается с вами для подтверждения.</p>
+					</div>
+				</div>
+				<div class="buyers">
+					<p class="popular-title center">Выбор покупателей:</p>
+					<div class="popular-product">
+						<div class="popular-product__item">
+							<div class="popular-product__item-img">
+								<a href="#"><img class="product-thumbnail-img" src="./assets/img/Rectangle154.webp" alt="Rectangle"></a>
+							</div>
+							<div class="popular-product__item-description">
+								<a class="product-name" href="./single-product.html">Септик Евролос Эко 3</a>
+								<span class="product-price">156 525 ₽</span>
+							</div>
+						</div>
+						<div class="popular-product__item">
+							<div class="popular-product__item-img">
+								<a href="#"><img class="product-thumbnail-img" src="./assets/img/Rectangle154.webp" alt="Rectangle"></a>
+							</div>
+							<div class="popular-product__item-description">
+								<a class="product-name" href="./single-product.html">Септик Евролос Эко 3</a>
+								<span class="product-price">156 525 ₽</span>
+							</div>
+						</div>
+						<div class="popular-product__item">
+							<div class="popular-product__item-img">
+								<a href="#"><img class="product-thumbnail-img" src="./assets/img/Rectangle154.webp" alt="Rectangle"></a>
+							</div>
+							<div class="popular-product__item-description">
+								<a class="product-name" href="./single-product.html">Септик Евролос Эко 3</a>
+								<span class="product-price">156 525 ₽</span>
+							</div>
+						</div>
+						<div class="popular-product__item">
+							<div class="popular-product__item-img">
+								<a href="#"><img class="product-thumbnail-img" src="./assets/img/Rectangle154.webp" alt="Rectangle"></a>
+							</div>
+							<div class="popular-product__item-description">
+								<a class="product-name" href="./single-product.html">Септик Евролос Эко 3</a>
+								<span class="product-price">156 525 ₽</span>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-
-<div class="wrapper">
-	<div class="container container__screen">
-		<h1 class="page-title title__indent-top">Контакты</h1>
-	</div>
-	</div>
-<div class="wrapper">
-	<div class="container">
-		<div class="contacts">
-			<div class="contacts-block container__screen">
-				<ul class="contacts-block-list">
-					<li class="contacts-block-list-item">
-						<img class="contacts-block-list-item-icon" src="./assets/img/ep_map-location.png" alt="ep_map">
-						<p class="contacts-block-list-item-text">109044. Москва ул.Крутицкая дом 4 строение 3</p>
-					</li>
-					<li class="contacts-block-list-item">
-						<img class="contacts-block-list-item-icon" src="./assets/img/papericon.png" alt="paper">
-						<p class="contacts-block-list-item-text">ООО “ПРО100СЕПТИК”</p>
-					</li>
-					<li class="contacts-block-list-item">
-						<img class="contacts-block-list-item-icon" src="./assets/img/papericon.png" alt="paper">
-						<p class="contacts-block-list-item-text">ИНН: 9705127556</p>
-					</li>
-					<li class="contacts-block-list-item">
-						<img class="contacts-block-list-item-icon" src="./assets/img/papericon.png" alt="paper">
-						<p class="contacts-block-list-item-text">ОГРН: 1197746064482</p>
-					</li>
-					<li class="contacts-block-list-item">
-						<a href="tel:+7(495)021-25-52" class="contacts-block-list-item-link">
-							<img class="contacts-block-list-item-icon" src="./assets/img/carbon_phone.png" alt="carbon_phone">
-							<p class="contacts-block-list-item-text">+7 (495) 021-25-52</p>
-						</a>
-					</li>
-					<li class="contacts-block-list-item">
-						<a href="mailto:zakaz@pro100septik.ru" class="contacts-block-list-item-link">
-							<img class="contacts-block-list-item-icon" src="./assets/img/fluent_mail-16-regular.png" alt="fluent_mail">
-							<p class="contacts-block-list-item-text">zakaz@pro100septik.ru</p>
-						</a>
-					</li>
-				</ul>
-					<div class="contacts-social">
-						<p class="contacts-social-title">Следите за нами:</p>
-						<div class="contacts-social-list">
-							<a href="https://vk.com/pro100septik" target="_blank" class="footer-right-contacts-social-list-item">
-								<img class="footer-right-contacts-social-list-item-img" src="./assets/img/cib_vk.png" alt="vk">
-							</a>
-							<a href="https://dzen.ru/id/5e8af41943499365394eaf97" target="_blank" class="footer-right-contacts-social-list-item">
-								<img class="footer-right-contacts-social-list-item-img" src="./assets/img/Yandex_Zen_logo1.png" alt="Yandex_Zen_logo">
-							</a>
-							<a href="https://www.youtube.com/@pro100septik" target="_blank" class="footer-right-contacts-social-list-item">
-								<img class="footer-right-contacts-social-list-item-img" src="./assets/img/fa_youtube-square.png" alt="fa_youtube">
-							</a>
-							<a href="https://rutube.ru/channel/24634604/" target="_blank" class="footer-right-contacts-social-list-item">
-								<img class="footer-right-contacts-social-list-item-img" src="./assets/img/rutubelogo.png" alt="rutube">
-							</a>
-							</div>
-						</div>
-				<div class="contacts-map"><iframe src="https://yandex.by/map-widget/v1/-/CCUnj8fHPB" style="position:relative;"></iframe></div>
-				</div>
-			<form action="#" class="contacts-form">
-				<p class="title">Форма обратной связи</p>
-				<div class="contacts-form-inputs">
-					<input type="text" name="form-name" id="form-name" placeholder="Имя">
-					<input type="email" name="form-email" id="form-email" placeholder="E-mail">
-					<input type="tel" name="form-tel" id="form-tel" placeholder="Номер телефона">
-					<textarea name="form-comments" id="form-comments" cols="30" rows="6" placeholder="Коментарий:"></textarea>
-					<label for="consent"><input type="checkbox" name="consent" id="consent">Согласен на обработку персональных данных.</label>
-					<button class='form-btn' type="submit" disabled>Оставить</button>
-				</div>
-			</form>
-		</div>
-	</div>
-</div>
-<script src="./assets/js/contacts.js"></script>
-</main>
-<!--start footer-->
+	</main>
 <!--start footer-->
 <div class="wrapper wrapper_footer">
 	<div class="container">

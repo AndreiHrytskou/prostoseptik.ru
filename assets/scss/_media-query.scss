@@ -688,6 +688,15 @@
 	.container{
 		max-width: 100%;
 	}
+	.white-block{
+		padding: 20px;
+		.payment-radio-img{
+			display: flex;
+			max-width: 260px;
+			margin: 0 auto;
+			justify-content: space-between;
+		}
+	}
 	.container__screen{
 		max-width: 95%;
 		margin: auto;
