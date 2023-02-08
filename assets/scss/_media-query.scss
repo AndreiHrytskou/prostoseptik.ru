@@ -256,6 +256,7 @@
   }
   .content{
 	flex-direction: column;
+	margin-top: 0;
 	.content__img{
 		margin: 0 auto;
 	}
@@ -310,6 +311,12 @@
 @media screen and ( max-width: 1024px ){
 	.zavod .slider-group .mySwiper9, .zavod .slider-group .mySwiper12, .zavod .slider-group .mySwiper14{
 		display: none;
+	}
+	.type-bottom-item{
+		padding: 30px 10px;
+	}
+	.favorite{
+		margin-top: 0;
 	}
 	.slider10{
 		.swiper-pagination .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
@@ -669,6 +676,12 @@
 	}
 	.need__img {
 		display: none;
+	}
+	.zavod .slider-group .mySwiper10, .zavod .slider-group .mySwiper11, .zavod .slider-group .mySwiper13{
+		min-height: auto;
+		img{
+			height: auto;
+		}
 	}
 }
 @media screen and ( max-width: 768px ){
@@ -1076,6 +1089,9 @@
 @media screen and ( max-width: 576px ){
 	.video-bottom{
 		height: 250px;
+	}
+	.product-headbaner .swiper-backface-hidden .swiper-slide{
+		height: auto;
 	}
 	.benefits{
 		margin-top: 30px;

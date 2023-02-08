@@ -1472,7 +1472,7 @@ html, body {
   cursor: pointer;
   max-width: 23%;
   width: 100%;
-  height: auto;
+  height: 170px;
   background-color: white;
   -webkit-border-radius: 5px;
           border-radius: 5px;
@@ -1554,7 +1554,7 @@ html, body {
 }
 
 .typeActive {
-  height: 173px;
+  height: 180px;
   -webkit-border-radius: 5px 5px 0 0;
           border-radius: 5px 5px 0 0;
 }
@@ -1999,7 +1999,7 @@ html, body {
 }
 
 .news {
-  padding: 80px 0 0;
+  padding: 40px 0 0;
 }
 
 .news-title {
@@ -2039,7 +2039,7 @@ html, body {
 
 .content {
   margin-top: 50px;
-  padding: 50px;
+  padding: 40px 50px;
   -webkit-border-radius: 10px;
           border-radius: 10px;
   display: -webkit-box;
@@ -2074,7 +2074,7 @@ html, body {
 
 .favorite {
   margin-top: 50px;
-  padding: 80px 0 40px;
+  padding: 40px 0;
 }
 
 .favorite .catalog .product {
@@ -7104,6 +7104,7 @@ html, body {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 0;
   }
   .content .content__img {
     margin: 0 auto;
@@ -7175,6 +7176,12 @@ html, body {
 @media screen and (max-width: 1024px) {
   .zavod .slider-group .mySwiper9, .zavod .slider-group .mySwiper12, .zavod .slider-group .mySwiper14 {
     display: none;
+  }
+  .type-bottom-item {
+    padding: 30px 10px;
+  }
+  .favorite {
+    margin-top: 0;
   }
   .slider10 .swiper-pagination .swiper-horizontal > .swiper-pagination-bullets, .slider10 .swiper-pagination-bullets.swiper-pagination-horizontal, .slider10 .swiper-pagination-custom, .slider10 .swiper-pagination-fraction {
     bottom: 10px;
@@ -7622,6 +7629,12 @@ html, body {
   }
   .need__img {
     display: none;
+  }
+  .zavod .slider-group .mySwiper10, .zavod .slider-group .mySwiper11, .zavod .slider-group .mySwiper13 {
+    min-height: auto;
+  }
+  .zavod .slider-group .mySwiper10 img, .zavod .slider-group .mySwiper11 img, .zavod .slider-group .mySwiper13 img {
+    height: auto;
   }
 }
 
@@ -8180,6 +8193,9 @@ html, body {
 @media screen and (max-width: 576px) {
   .video-bottom {
     height: 250px;
+  }
+  .product-headbaner .swiper-backface-hidden .swiper-slide {
+    height: auto;
   }
   .benefits {
     margin-top: 30px;

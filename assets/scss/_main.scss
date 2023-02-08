@@ -422,7 +422,7 @@
 	cursor: pointer;
     max-width: 23%;
     width: 100%;
-	 height: auto;
+	 height: 170px;
     background-color: white;
     border-radius: 5px;
     padding: 30px 40px;
@@ -469,7 +469,7 @@
 	display: flex;
 }
 .typeActive{
-	height: 173px;
+	height: 180px;
 	border-radius: 5px 5px 0 0;
 	.info{
 		display: none;
@@ -718,7 +718,7 @@
 // news
 
 	.news{
-		padding: 80px 0 0;
+		padding: 40px 0 0;
 		&-title{
 			@include fonts($comfortaa, 45px, 700, 50px, $dark_gray);
 			text-align: center;
@@ -740,7 +740,7 @@
 	}
 	.content{
 		margin-top: 50px;
-		padding: 50px;
+		padding: 40px 50px;
 		border-radius: 10px;
 		display: flex;
 		gap: 30px;
@@ -763,7 +763,7 @@
 	}
 	.favorite{
 		margin-top: 50px;
-		padding: 80px 0 40px;
+		padding: 40px 0;
 		.catalog .product{
 			max-width: 100%;
 		}
