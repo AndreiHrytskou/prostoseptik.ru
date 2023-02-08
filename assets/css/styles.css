@@ -5889,7 +5889,7 @@ html, body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
-  height: 100%;
+  height: auto;
 }
 
 .textblock-wrap-container-list-item {

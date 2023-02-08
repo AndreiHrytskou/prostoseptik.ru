@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (window.innerWidth > 1200) {
     window.addEventListener("scroll", () => {
       let scrollY = window.scrollY;
-      if (scrollY > topBlock - 100 && scrollY < bottomBlock + 50) {
+      if (scrollY > topBlock - 100 && scrollY < bottomBlock - 700) {
         scrollFirst();
         blockImage.classList.add("fixed");
         if (blockImage.classList.contains("fixed")) {
@@ -29,20 +29,20 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
         blockImage.classList.remove("fixed");
         if (
-          scrollY > bottomBlock + 50 &&
+          scrollY > bottomBlock - 700 &&
           !blockImage.classList.contains("fixed")
         ) {
           blockImage.classList.add("fix");
         }
       }
-      if (scrollY > topBlockSecond && scrollY < bottomBlockSecond + 100) {
+      if (scrollY > topBlockSecond && scrollY < bottomBlockSecond - 850) {
         scrollSecond();
         blockImageSecond.classList.add("fixed2");
         blockImageSecond.classList.remove("fix2");
       } else {
         blockImageSecond.classList.remove("fixed2");
         if (
-          scrollY > bottomBlockSecond + 100 &&
+          scrollY > bottomBlockSecond - 850 &&
           !blockImageSecond.classList.contains("fixed2")
         ) {
           blockImageSecond.classList.add("fix2");
