@@ -2466,6 +2466,13 @@ html, body {
   margin-top: 50px;
 }
 
+.wrapper__text {
+  margin-top: 50px;
+  padding: 40px 50px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+}
+
 .wrap {
   display: -webkit-box;
   display: -webkit-flex;
