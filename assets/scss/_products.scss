@@ -146,12 +146,12 @@
 				border-radius: 10px;
 				margin-bottom: 15px;
 			}
-			&-price{
+			.price{
 				@include fonts($roboto, 25px, 400, 32px, $dark_gray);
-				margin-bottom: 12px;
 			}
 			&-btn{
 				&-item{
+					margin-top: 30px;
 					cursor: pointer;
 					border: none;
 					width: 100%;
@@ -266,7 +266,7 @@
 	}
 	&-list{
 			margin-block-start: 0;
-			padding-inline-start: 20px;
+			padding-inline-start: 30px;
 			margin-bottom: 0px;
 			&-item{
 				@include fonts($roboto, 16px, 400, 24px, $dark_gray);

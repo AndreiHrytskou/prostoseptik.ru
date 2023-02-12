@@ -2,7 +2,7 @@
 .zavod{
 	position: relative;	
 	&-title{
-		margin: 80px auto 20px;
+		margin: 50px auto 20px;
 		max-width: 100%;
 	}
 	&-gallery{
@@ -112,15 +112,24 @@
 	.swiper-pagination{
 		display: none;
 	}
+	.mySwiper9{
+		padding-bottom: 30px;
+	}
 }
 .slider11{
 	.swiper-pagination1{
 		display: none;
 	}
+	.mySwiper12{
+		padding-bottom: 30px;
+	}
 }
 .slider12{
 	.swiper-pagination2{
 		display: none;
+	}
+	.mySwiper14{
+		padding-bottom: 30px;
 	}
 }
 

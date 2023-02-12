@@ -452,6 +452,7 @@
 		flex-wrap: wrap;
 		gap: 10px 70px;
 		margin-block-start: 0;
+		padding-inline-start: 15px;
 		list-style: none;
 		li{
 			width: max-content;
@@ -775,11 +776,16 @@
 	.news-more:hover{
 		box-shadow: 0px 1px 5px 2px rgba(0, 153, 153, 0.2) inset;
 	}
+	.price-block{
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		margin-bottom: 10px;
+	}
 	.before-price{
-		@include fonts($roboto, 11px, 400, 14px, $grey);
+		@include fonts($roboto, 14px, 400, 18px, $dark_gray);
 		text-decoration-line: line-through;
-		margin-right: 5px;
-		margin-bottom: 7px;
+		opacity: 0.4;
 	}
 	.price__discount{
 		@include fonts($roboto, 11px, 400, 14px, $dark_gray);
@@ -788,62 +794,26 @@
 		border-radius: 2px;
 		margin-bottom: 4px;
 	}
+	.choice{
+		display: flex;
+		gap: 10px;
+	}
 	.price-wrap{
-		text-align: left;
-		background-color: $price;
-		padding: 10px;
+		max-width: 120px;
+		border: 1px solid $footer;
 		border-radius: 10px;
-		@include fonts($roboto, 14px, 400, 21px, $dark_gray);
-		.price{
-			margin-top: 4px;
-			margin-bottom: 10px;
+		padding: 8px 7px;
+		@include fonts($roboto, 12px, 400, 13px, $dark_gray);
+		text-align: center;
+	}
+	.price-wrap{
+		input{
+			display: none;
 		}
-		.radiobtn{
-			display: flex;
-			align-items: center;
-			gap: 5px;
-		}
-		.radiobtn input{
-			appearance: none;
-    		position: absolute;
-		}
-		.key{
-			padding-left: 20px;
-			position: relative;
-		}
-		.key::before{
-			content: "";
-			display: block;
-			width: 12.5px;
-			height: 12.5px;
-			border: 1px solid #ccc;
-			background-color: #fff;
-			border-radius: 50%;
-			position: absolute;
-			top: 3px;
-			left: 0;
-			z-index: 1;
-    		transition: background .1s linear, border .1s linear;
-		}
-		.key:after {
-			content: "";
-			display: block;
-			width: 8.2px;
-			height: 8.2px;
-			background-color: $dark_gray ;
-			border-radius: 50%;
-			opacity: 0;
-			position: absolute;
-			top: 5.7px;
-			left: 3px;
-			z-index: 2;
-			transition: opacity .1s linear;
-		}
-		.radiobtn input:checked + .key:before {
-		}
-		.radiobtn input:checked + .key:after {
-			opacity: 1;
-		}
+	}
+	.active-label{
+		background-color: $price;
+		border:1px solid rgba(133, 173, 219, 1) ;
 	}
 	.textwhy{
 		padding:40px 50px;
@@ -1011,6 +981,6 @@
 }
 .wrapper__text{
 	margin-top: 50px;
-	padding: 40px 50px;
+	padding: 40px 30px;
 	border-radius: 10px;
 }

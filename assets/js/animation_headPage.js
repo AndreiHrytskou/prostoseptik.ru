@@ -41,15 +41,26 @@ card.forEach((e) => {
     e.style.zIndex = "-1";
   });
 });
-const priceItems = document.querySelectorAll(".price-wrap");
-priceItems.forEach((e) => {
-  e.addEventListener("click", (el) => {
-    el.preventDefault();
-    e.classList.toggle("inputChecked");
-    if (e.classList.contains("inputChecked")) {
-      e.childNodes[6].childNodes[1].checked = true;
+const product = document.querySelectorAll(".product");
+product.forEach((e) => {
+  const input = e.childNodes[3].childNodes[3].childNodes[1].childNodes[1];
+  const input2 = e.childNodes[3].childNodes[3].childNodes[3].childNodes[1];
+  const price = e.childNodes[3].childNodes[3].childNodes[1];
+  const price2 = e.childNodes[3].childNodes[3].childNodes[3];
+  input.addEventListener("click", () => {
+    if (input.checked) {
+      price.classList.add("active-label");
+      price2.classList.remove("active-label");
     } else {
-      e.childNodes[6].childNodes[1].checked = false;
+      price.classList.remove("active-label");
+    }
+  });
+  input2.addEventListener("click", () => {
+    if (input2.checked) {
+      price2.classList.add("active-label");
+      price.classList.remove("active-label");
+    } else {
+      price2.classList.remove("active-label");
     }
   });
 });

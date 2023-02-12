@@ -42,3 +42,27 @@ buy.addEventListener("click", () => {
     modalBlock.remove();
   });
 });
+const product = document.querySelectorAll(".choice");
+product.forEach((e) => {
+  console.log(e.childNodes);
+  const input = e.childNodes[1].childNodes[1];
+  const input2 = e.childNodes[3].childNodes[1];
+  const price = e.childNodes[1];
+  const price2 = e.childNodes[3];
+  input.addEventListener("click", () => {
+    if (input.checked) {
+      price.classList.add("active-label");
+      price2.classList.remove("active-label");
+    } else {
+      price.classList.remove("active-label");
+    }
+  });
+  input2.addEventListener("click", () => {
+    if (input2.checked) {
+      price2.classList.add("active-label");
+      price.classList.remove("active-label");
+    } else {
+      price2.classList.remove("active-label");
+    }
+  });
+});
