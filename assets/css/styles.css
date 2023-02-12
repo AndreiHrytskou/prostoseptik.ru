@@ -2209,7 +2209,7 @@ html, body {
 }
 
 .textwhy .content__text .title {
-  margin: 50px auto 20px;
+  margin: 20px auto;
   max-width: 670px;
 }
 
@@ -6068,6 +6068,14 @@ html, body {
   padding-right: 30px;
 }
 
+.textblock-wrap-container:nth-child(3) {
+  margin-top: 30px;
+}
+
+.textblock-wrap-container:nth-child(3) .textblock-wrap-container-list {
+  margin-top: 10px;
+}
+
 .textblock-wrap-container-block {
   max-width: 591px;
   width: 100%;
@@ -6225,12 +6233,12 @@ html, body {
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   right: 0;
-  left: 0 !important;
+  left: auto !important;
   bottom: 0;
 }
 
@@ -6428,6 +6436,18 @@ html, body {
 
 .zavod .swiper-button-prev:after, .zavod .swiper-container-rtl .swiper-button-next:after {
   margin-right: auto;
+}
+
+.zavod .slider10 .swiper-pagination {
+  display: none;
+}
+
+.zavod .slider11 .swiper-pagination1 {
+  display: none;
+}
+
+.zavod .slider12 .swiper-pagination2 {
+  display: none;
 }
 
 @media (hover: none), (pointer: coarse) {
@@ -7239,22 +7259,31 @@ html, body {
   .favorite {
     margin-top: 0;
   }
-  .slider10 .swiper-pagination .swiper-horizontal > .swiper-pagination-bullets, .slider10 .swiper-pagination-bullets.swiper-pagination-horizontal, .slider10 .swiper-pagination-custom, .slider10 .swiper-pagination-fraction {
+  .zavod .slider10 .swiper-pagination {
+    display: block;
+  }
+  .zavod .slider10 .swiper-pagination .swiper-horizontal > .swiper-pagination-bullets, .zavod .slider10 .swiper-pagination-bullets.swiper-pagination-horizontal, .zavod .slider10 .swiper-pagination-custom, .zavod .slider10 .swiper-pagination-fraction {
     bottom: 10px;
   }
-  .slider11 {
+  .zavod .slider11 {
     position: relative;
   }
-  .slider11 .swiper-pagination .swiper-horizontal > .swiper-pagination-bullets, .slider11 .swiper-pagination-bullets.swiper-pagination-horizontal, .slider11 .swiper-pagination-custom, .slider11 .swiper-pagination-fraction {
+  .zavod .slider11 .swiper-pagination1 {
+    display: block;
+  }
+  .zavod .slider11 .swiper-pagination .swiper-horizontal > .swiper-pagination-bullets, .zavod .slider11 .swiper-pagination-bullets.swiper-pagination-horizontal, .zavod .slider11 .swiper-pagination-custom, .zavod .slider11 .swiper-pagination-fraction {
     bottom: 10px;
     position: absolute;
     z-index: 2;
     text-align: center;
   }
-  .slider12 {
+  .zavod .slider12 {
     position: relative;
   }
-  .slider12 .swiper-pagination .swiper-horizontal > .swiper-pagination-bullets, .slider12 .swiper-pagination-bullets.swiper-pagination-horizontal, .slider12 .swiper-pagination-custom, .slider12 .swiper-pagination-fraction {
+  .zavod .slider12 .swiper-pagination2 {
+    display: block;
+  }
+  .zavod .slider12 .swiper-pagination .swiper-horizontal > .swiper-pagination-bullets, .zavod .slider12 .swiper-pagination-bullets.swiper-pagination-horizontal, .zavod .slider12 .swiper-pagination-custom, .zavod .slider12 .swiper-pagination-fraction {
     bottom: 10px;
     position: absolute;
     z-index: 2;

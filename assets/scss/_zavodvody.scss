@@ -87,7 +87,6 @@
   opacity: 0.2;
   transition: opacity 0.6s;
 }
-
 .swiper-button-prev {
   width: 50%;
   height: 100%;
@@ -109,7 +108,21 @@
 .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after{
   margin-right: auto;
 }
-
+.slider10{
+	.swiper-pagination{
+		display: none;
+	}
+}
+.slider11{
+	.swiper-pagination1{
+		display: none;
+	}
+}
+.slider12{
+	.swiper-pagination2{
+		display: none;
+	}
+}
 
 @media (hover:none), (pointer:coarse){   
   .swiper-button-prev, .swiper-button-next{

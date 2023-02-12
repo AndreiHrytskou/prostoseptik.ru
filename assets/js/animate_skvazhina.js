@@ -3,13 +3,13 @@ const blockImage = document.querySelector(
   ".textblock-wrap-container:first-child .textblock-wrap-container-list"
 );
 const blockImageSecond = document.querySelector(
-  ".textblock-wrap-container:nth-child(2) .textblock-wrap-container-list"
+  ".textblock-wrap-container:nth-child(3) .textblock-wrap-container-list"
 );
 const blockHeight = document.querySelector(
   ".textblock-wrap-container:first-child"
 );
 const blockHeightSecond = document.querySelector(
-  ".textblock-wrap-container:nth-child(2)"
+  ".textblock-wrap-container:nth-child(3)"
 );
 let topBlock = blockImage.getBoundingClientRect().top;
 let bottomBlock = blockImage.getBoundingClientRect().bottom;
@@ -60,7 +60,8 @@ document.addEventListener("DOMContentLoaded", () => {
       let body = window.document.body.offsetWidth;
       let wrap = document.querySelector(".textblock-wrap").offsetWidth;
       let sum = (body - wrap) / 2;
-      blockImageSecond.style.left = sum + 50 + "px";
+      let sum2 = wrap - blockImageSecond.offsetWidth;
+      blockImageSecond.style.left = sum + sum2 - 50 + "px";
     }
   }
 });

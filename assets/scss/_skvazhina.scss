@@ -131,6 +131,12 @@
 		padding-right: 30px;
 	}
 }
+.textblock-wrap-container:nth-child(3){
+	margin-top: 30px;
+	.textblock-wrap-container-list{
+		margin-top: 10px;
+	}
+}
 .textblock-wrap-container-block{
 	max-width: 591px;
 	width: 100%;
@@ -216,8 +222,8 @@
 	max-width: 471px;
 	position: absolute;
 	justify-content: flex-end;
-	align-items: flex-start;
+	align-items: flex-end;
 	right: 0;
-	left: 0 !important;
+	left: auto !important;
 	bottom: 0;
 }

@@ -318,13 +318,19 @@
 	.favorite{
 		margin-top: 0;
 	}
-	.slider10{
+	.zavod .slider10{
+		.swiper-pagination{
+			display: block;
+		}
 		.swiper-pagination .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
 			bottom: 10px;
 		}
 	} 
-	.slider11{
+	.zavod .slider11{
 		position: relative;
+		.swiper-pagination1{
+			display: block;
+		}
 		.swiper-pagination .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
 			bottom: 10px;
 			position: absolute;
@@ -332,8 +338,11 @@
 			text-align: center;
 		}
 	} 
-	.slider12{
+	.zavod .slider12{
 		position: relative;
+		.swiper-pagination2{
+			display: block;
+		}
 		.swiper-pagination .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
 			bottom: 10px;
 			position: absolute;
