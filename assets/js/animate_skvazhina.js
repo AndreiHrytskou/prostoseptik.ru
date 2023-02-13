@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (window.innerWidth > 1200) {
     window.addEventListener("scroll", () => {
       let scrollY = window.scrollY;
-      if (scrollY > topBlock - 100 && scrollY < bottomBlock - 700) {
+      if (scrollY > topBlock - 80 && scrollY < bottomBlock - 700) {
         scrollFirst();
         blockImage.classList.add("fixed");
         if (blockImage.classList.contains("fixed")) {
