@@ -95,6 +95,7 @@
 			#form-comments{
 				width: 100%;
 				border: none;
+				outline: none;
 				padding: 14px 20px;
 				border-radius: 5px;
 				@include fonts($roboto, 16px, 400, 21px, $dark_gray);

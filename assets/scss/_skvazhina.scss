@@ -95,12 +95,13 @@
 	text-decoration: none;
 }
 .consultant__btn:hover{
-	padding: 18px 40px;
+	padding: 18.4px 40px;
 	box-sizing: border-box;
 	border: 2px solid $paginat;
 	background-color: $white;
 	color: $paginat;
 }
+
 .form-button{
 	cursor: pointer;
 	background-color: $paginat;
@@ -183,6 +184,7 @@
 	#tel{
 		padding: 14px 20px;
 		border: none;
+		outline: none;
 		border-radius: 5px;
 	}
 	#ingener_name::placeholder,
@@ -225,4 +227,17 @@
 	right: 0;
 	left: auto !important;
 	bottom: 0;
+}
+.name-active{
+	border: 2px solid red !important;
+}
+.name-active::placeholder{
+	color: red !important;
+}
+.name-active:focus{
+	border: none !important;
+	outline: none;
+}
+.name-active::placeholder:focus{
+	color: $inputplaceholder !important;
 }

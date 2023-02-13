@@ -7,9 +7,8 @@ card.forEach((e) => {
 });
 if (window.innerWidth > 1025) {
   let catalog = document.querySelectorAll(".product");
-  const prodImg = document.querySelectorAll(".product-img");
   catalog.forEach((e) => {
-    let btn = e.childNodes[3].childNodes[5];
+    let btn = e.childNodes[3].childNodes[7];
     btn.addEventListener("click", () => {
       function getCoords() {
         let cart = document.querySelector(".header__menu-cart");

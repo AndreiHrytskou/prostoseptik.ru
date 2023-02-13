@@ -6,6 +6,8 @@ const btn2 = document.querySelector(".block2-bottom-btn");
 const input = document.querySelector(".input-checkbox");
 const div = document.createElement("div");
 const formOrder = document.querySelector(".form-order");
+const inputName = document.querySelector(".input-name");
+const inputTel = document.querySelector(".input-tel");
 div.addEventListener("click", () => {
   div.classList.toggle("div-hide");
 });
@@ -34,8 +36,22 @@ btnForm.forEach((e) => {
 
 button.addEventListener("click", (e) => {
   e.preventDefault();
-  if (modal.classList.contains("modal__active")) {
+  if (
+    modal.classList.contains("modal__active") &&
+    inputName.value != "" &&
+    inputTel.value != ""
+  ) {
     modal.classList.toggle("modal__active");
+    createThanks();
+    div.classList.remove("div-hide");
+    inputName.classList.remove("name-active");
+    inputTel.classList.remove("name-active");
+    inputName.value = "";
+    inputTel.value = "";
+  } else {
+    inputName.placeholder = "Вы не ввели имя";
+    inputName.classList.add("name-active");
+    inputTel.placeholder = "Вы не ввели телефона";
+    inputTel.classList.add("name-active");
   }
-  createThanks();
 });

@@ -316,11 +316,13 @@
 				border-radius: 5px;
 				padding: 14px 20px;
 				border: none;
+				outline: none;
 			}
 			#phone{
 				border-radius: 5px;
 				padding: 14px 20px;
 				border: none;
+				outline: none;
 			}
 			input::placeholder{
 				@include fonts($roboto, 16px, 400, 21px, $inputplaceholder);

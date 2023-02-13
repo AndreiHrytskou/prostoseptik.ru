@@ -109,7 +109,7 @@ product.forEach((e) => {
 });
 // console.log(arr);
 order.addEventListener("click", (e) => {
-  e.preventDefault();
+  //   e.preventDefault();
   products.name = name.value;
   products.phone = inputPhone.value;
   products.email = email.value;
@@ -123,8 +123,8 @@ order.addEventListener("click", (e) => {
   localStorage.setItem("order", json);
   form.addEventListener("submit", (event) => {
     event.preventDefault();
+    createThank();
   });
-  createThank();
 });
 document.addEventListener("click", (e) => {
   let target = e.target;

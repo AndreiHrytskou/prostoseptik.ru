@@ -1,9 +1,4 @@
-const sub = document.querySelector(".form-btn");
 const buy = document.querySelector(".product-descriptions-top-btn-item");
-sub.addEventListener("click", (e) => {
-  e.preventDefault();
-  createThanks();
-});
 buy.addEventListener("click", () => {
   const spanBack = document.createElement("div");
   const modalBlock = document.createElement("div");

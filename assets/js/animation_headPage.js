@@ -34,36 +34,36 @@ window.addEventListener("scroll", () => {
   }
 });
 
-let card = document.querySelectorAll(".card-btn");
-card.forEach((e) => {
-  e.addEventListener("click", (elem) => {
-    elem.preventDefault();
-    e.style.zIndex = "-1";
-  });
-});
-const product = document.querySelectorAll(".product");
-product.forEach((e) => {
-  const input = e.childNodes[3].childNodes[3].childNodes[1].childNodes[1];
-  const input2 = e.childNodes[3].childNodes[3].childNodes[3].childNodes[1];
-  const price = e.childNodes[3].childNodes[3].childNodes[1];
-  const price2 = e.childNodes[3].childNodes[3].childNodes[3];
-  input.addEventListener("click", () => {
-    if (input.checked) {
-      price.classList.add("active-label");
-      price2.classList.remove("active-label");
-    } else {
-      price.classList.remove("active-label");
-    }
-  });
-  input2.addEventListener("click", () => {
-    if (input2.checked) {
-      price2.classList.add("active-label");
-      price.classList.remove("active-label");
-    } else {
-      price2.classList.remove("active-label");
-    }
-  });
-});
+// let card = document.querySelectorAll(".card-btn");
+// card.forEach((e) => {
+//   e.addEventListener("click", (elem) => {
+//     elem.preventDefault();
+//     e.style.zIndex = "-1";
+//   });
+// });
+// const product = document.querySelectorAll(".product");
+// product.forEach((e) => {
+//   const input = e.childNodes[3].childNodes[3].childNodes[1].childNodes[1];
+//   const input2 = e.childNodes[3].childNodes[3].childNodes[3].childNodes[1];
+//   const price = e.childNodes[3].childNodes[3].childNodes[1];
+//   const price2 = e.childNodes[3].childNodes[3].childNodes[3];
+//   input.addEventListener("click", () => {
+//     if (input.checked) {
+//       price.classList.add("active-label");
+//       price2.classList.remove("active-label");
+//     } else {
+//       price.classList.remove("active-label");
+//     }
+//   });
+//   input2.addEventListener("click", () => {
+//     if (input2.checked) {
+//       price2.classList.add("active-label");
+//       price.classList.remove("active-label");
+//     } else {
+//       price2.classList.remove("active-label");
+//     }
+//   });
+// });
 const type = document.querySelector(".type_country");
 window.addEventListener("scroll", () => {
   type.getBoundingClientRect();

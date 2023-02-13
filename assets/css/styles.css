@@ -3537,11 +3537,16 @@ html, body {
 }
 
 .post_descr p {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .post_descr p:last-child {
   margin-bottom: 0;
+}
+
+.post_descr p:first-child {
+  margin-top: 0;
 }
 
 .post_descr h2 {
@@ -4903,6 +4908,7 @@ html, body {
           border-radius: 5px;
   padding: 14px 20px;
   border: none;
+  outline: none;
 }
 
 .form-left-form #phone {
@@ -4910,6 +4916,7 @@ html, body {
           border-radius: 5px;
   padding: 14px 20px;
   border: none;
+  outline: none;
 }
 
 .form-left-form input::-webkit-input-placeholder {
@@ -5320,6 +5327,7 @@ html, body {
 .contacts-form-inputs #form-comments {
   width: 100%;
   border: none;
+  outline: none;
   padding: 14px 20px;
   -webkit-border-radius: 5px;
           border-radius: 5px;
@@ -5635,13 +5643,9 @@ html, body {
   display: none;
 }
 
-.textblock-wrap-image-pic {
-  margin-top: 60px;
-}
-
 .textblock-wrap .content__text {
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .textblock-wrap .advantage {
@@ -5974,7 +5978,7 @@ html, body {
 }
 
 .consultant__btn:hover {
-  padding: 18px 40px;
+  padding: 18.4px 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 2px solid #2a447f;
@@ -6106,6 +6110,7 @@ html, body {
 .ingener #tel {
   padding: 14px 20px;
   border: none;
+  outline: none;
   -webkit-border-radius: 5px;
           border-radius: 5px;
 }
@@ -6203,6 +6208,47 @@ html, body {
   bottom: 0;
 }
 
+.name-active {
+  border: 2px solid red !important;
+}
+
+.name-active::-webkit-input-placeholder {
+  color: red !important;
+}
+
+.name-active:-ms-input-placeholder {
+  color: red !important;
+}
+
+.name-active::-ms-input-placeholder {
+  color: red !important;
+}
+
+.name-active::placeholder {
+  color: red !important;
+}
+
+.name-active:focus {
+  border: none !important;
+  outline: none;
+}
+
+.name-active::-webkit-input-placeholder:focus {
+  color: #c6c6c6 !important;
+}
+
+.name-active:-ms-input-placeholder:focus {
+  color: #c6c6c6 !important;
+}
+
+.name-active::-ms-input-placeholder:focus {
+  color: #c6c6c6 !important;
+}
+
+.name-active::placeholder:focus {
+  color: #c6c6c6 !important;
+}
+
 .video-galery-block {
   overflow: hidden;
   width: 100%;
@@ -6296,6 +6342,7 @@ html, body {
 }
 
 .zavod .slider-group .mySwiper10, .zavod .slider-group .mySwiper11, .zavod .slider-group .mySwiper13 {
+  margin-top: 0;
   padding-bottom: 0;
   -webkit-border-radius: 10px;
           border-radius: 10px;

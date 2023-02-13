@@ -18,11 +18,13 @@ function createThanks() {
   thanksBtn.append("Продолжить");
   span.classList.toggle("div-hide");
   thanksBtn.addEventListener("click", () => {
+    if (span.classList.contains("div-hide")) {
+      span.classList.remove("div-hide");
+    }
     thanks.remove();
-    span.classList.toggle("div-hide");
   });
   span.addEventListener("click", () => {
+    span.classList.remove("div-hide");
     thanks.remove();
-    span.classList.toggle("div-hide");
   });
 }
