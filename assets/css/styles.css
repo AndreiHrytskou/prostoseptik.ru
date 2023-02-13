@@ -5847,7 +5847,6 @@ html, body {
 }
 
 .textblock-wrap-container-list {
-  margin-top: 60px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6164,7 +6163,7 @@ html, body {
 
 .fixed {
   position: fixed;
-  top: 60px;
+  top: 100px;
 }
 
 .fixed2 {
