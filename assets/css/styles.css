@@ -7752,6 +7752,12 @@ html, body {
   .container {
     max-width: 100%;
   }
+  .typeActive {
+    margin-bottom: -20px;
+  }
+  .blockVisible {
+    top: 0;
+  }
   .white-block {
     padding: 20px;
   }
@@ -7988,8 +7994,17 @@ html, body {
     padding: 60px 0px;
     gap: 40px;
   }
+  .content {
+    padding: 40px 30px;
+  }
   .wrapper__text {
-    padding: 0px 20px;
+    padding: 20px;
+  }
+  .zavod-title {
+    padding: 0;
+  }
+  .zavod .content__text {
+    padding: 0 20px;
   }
   .video-top {
     padding: 0 20px;
@@ -8072,7 +8087,10 @@ html, body {
     font-size: 35px;
     line-height: 39px;
   }
-  .title,
+  .title {
+    font-size: 20px;
+    line-height: 26px;
+  }
   .subtitle,
   .product-title,
   .blue__title {
