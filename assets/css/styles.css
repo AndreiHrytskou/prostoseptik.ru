@@ -2431,7 +2431,7 @@ html, body {
 
 .wrapper__text {
   margin-top: 50px;
-  padding: 40px 30px;
+  padding: 40px 50px;
   -webkit-border-radius: 10px;
           border-radius: 10px;
 }
@@ -4791,7 +4791,7 @@ html, body {
   -webkit-border-radius: 10px;
           border-radius: 10px;
   margin-top: 20px;
-  padding: 30px;
+  padding: 30px 50px;
 }
 
 .textblock .title {
@@ -6308,8 +6308,13 @@ html, body {
 }
 
 .zavod-title {
+  padding: 0 50px;
   margin: 50px auto 20px;
   max-width: 100%;
+}
+
+.zavod .content__text {
+  padding: 0 50px;
 }
 
 .zavod-gallery {
@@ -7984,7 +7989,7 @@ html, body {
     gap: 40px;
   }
   .wrapper__text {
-    padding: 60px 20px;
+    padding: 0px 20px;
   }
   .video-top {
     padding: 0 20px;

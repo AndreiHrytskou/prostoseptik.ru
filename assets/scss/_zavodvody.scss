@@ -2,8 +2,12 @@
 .zavod{
 	position: relative;	
 	&-title{
+		padding: 0 50px;
 		margin: 50px auto 20px;
 		max-width: 100%;
+	}
+	.content__text{
+		padding: 0 50px;
 	}
 	&-gallery{
 		margin-top: 20px;
