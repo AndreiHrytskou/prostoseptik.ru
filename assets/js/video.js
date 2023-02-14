@@ -1,10 +1,10 @@
 let video = document.querySelector(".video-bottom__item");
 let videoImg = document.querySelector(".video-bottom__item-img");
-const iframe = document.createElement("iframe");
-video.append(iframe);
 
 let heightImg;
 video.addEventListener("click", (e) => {
+  const iframe = document.createElement("iframe");
+  video.append(iframe);
   e.preventDefault();
   iframe.className = "video__frame";
   let videoSrc = video.href;
@@ -15,7 +15,7 @@ video.addEventListener("click", (e) => {
   iframe.style.display = "block";
   iframe.setAttribute("allow", "autoplay");
 });
-videoImg.onload = function () {
-  heightImg = this.height;
-  iframe.style.height = `${heightImg}px`;
-};
+// videoImg.onload = function () {
+//   heightImg = this.height;
+//   iframe.style.height = `${heightImg}px`;
+// };
