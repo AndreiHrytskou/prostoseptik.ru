@@ -35,14 +35,14 @@ document.addEventListener("DOMContentLoaded", () => {
           blockImage.classList.add("fix");
         }
       }
-      if (scrollY > topBlockSecond && scrollY < bottomBlockSecond - 850) {
+      if (scrollY > topBlockSecond && scrollY < bottomBlockSecond - 838) {
         scrollSecond();
         blockImageSecond.classList.add("fixed2");
         blockImageSecond.classList.remove("fix2");
       } else {
         blockImageSecond.classList.remove("fixed2");
         if (
-          scrollY > bottomBlockSecond - 850 &&
+          scrollY > bottomBlockSecond - 838 &&
           !blockImageSecond.classList.contains("fixed2")
         ) {
           blockImageSecond.classList.add("fix2");
