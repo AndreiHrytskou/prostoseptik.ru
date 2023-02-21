@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (window.innerWidth > 1200) {
     window.addEventListener("scroll", () => {
       let scrollY = window.scrollY;
-      if (scrollY > topBlock - 80 && scrollY < bottomBlock - 700) {
+      if (scrollY > topBlock - 80 && scrollY < bottomBlock - 838) {
         scrollFirst();
         blockImage.classList.add("fixed");
         if (blockImage.classList.contains("fixed")) {
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
         blockImage.classList.remove("fixed");
         if (
-          scrollY > bottomBlock - 700 &&
+          scrollY > bottomBlock - 838 &&
           !blockImage.classList.contains("fixed")
         ) {
           blockImage.classList.add("fix");
