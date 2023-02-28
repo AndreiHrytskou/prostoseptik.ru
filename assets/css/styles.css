@@ -3215,7 +3215,13 @@ html, body {
 }
 
 .hide,
-.more__btn {
+.more__btn,
+.hide__btn,
+.hide2,
+.hide3,
+.hide4,
+.hide5,
+.hide6 {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -3231,8 +3237,18 @@ html, body {
   cursor: pointer;
 }
 
+.hide__btn,
+.hide2,
+.hide4,
+.hide6 {
+  display: none;
+}
+
 .text-hide,
-.text-more {
+.text-more,
+.text-hide2,
+.text-hide3,
+.hide__block {
   display: none;
 }
 

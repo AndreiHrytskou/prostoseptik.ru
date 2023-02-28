@@ -138,18 +138,37 @@ newArr.forEach((e) => {
   e.style.display = "flex";
 });
 const hide = document.querySelector(".hide");
+const hide2 = document.querySelector(".hide2");
 const textHide = document.querySelectorAll(".text-hide");
 hide.addEventListener("click", () => {
   hide.style.display = "none";
+  hide2.style.display = "block";
   textHide.forEach((e) => {
-    e.style.display = "block";
+    e.classList.remove("text-hide");
   });
 });
+hide2.addEventListener("click", () => {
+  hide.style.display = "block";
+  hide2.style.display = "none";
+  textHide.forEach((e) => {
+    e.classList.add("text-hide");
+  });
+});
+
 const moreBtn = document.querySelector(".more__btn");
 const textMore = document.querySelectorAll(".text-more");
+const hideBtn = document.querySelector(".hide__btn");
 moreBtn.addEventListener("click", () => {
   moreBtn.style.display = "none";
+  hideBtn.style.display = "block";
   textMore.forEach((e) => {
-    e.style.display = "block";
+    e.classList.remove("text-more");
+  });
+});
+hideBtn.addEventListener("click", () => {
+  moreBtn.style.display = "block";
+  hideBtn.style.display = "none";
+  textMore.forEach((e) => {
+    e.classList.add("text-more");
   });
 });
