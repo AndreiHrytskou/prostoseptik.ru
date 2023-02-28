@@ -159,6 +159,7 @@
 }
 .city-list{
 	display: flex;
+	flex-wrap: wrap;
 	list-style: none;
 	align-items: center;
 	gap: 10px;

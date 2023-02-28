@@ -3228,7 +3228,6 @@ html, body {
   text-transform: uppercase;
   border: none;
   background-color: transparent;
-  margin-top: 20px;
   cursor: pointer;
 }
 
@@ -6071,6 +6070,9 @@ html, body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   list-style: none;
   -webkit-box-align: center;
   -webkit-align-items: center;
