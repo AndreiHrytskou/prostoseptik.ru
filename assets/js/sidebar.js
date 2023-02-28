@@ -145,3 +145,11 @@ hide.addEventListener("click", () => {
     e.style.display = "block";
   });
 });
+const moreBtn = document.querySelector(".more__btn");
+const textMore = document.querySelectorAll(".text-more");
+moreBtn.addEventListener("click", () => {
+  moreBtn.style.display = "none";
+  textMore.forEach((e) => {
+    e.style.display = "block";
+  });
+});

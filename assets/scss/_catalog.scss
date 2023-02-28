@@ -461,7 +461,8 @@ input[type="range"]:active::-webkit-slider-thumb{
 	cursor: pointer;
 }
 }
-.hide{
+.hide,
+.more__btn{
 	@include fonts($roboto, 16px, 700, 16px, $dark_blue);
 	text-align: center;
 	letter-spacing: 0.03em;
@@ -472,7 +473,8 @@ input[type="range"]:active::-webkit-slider-thumb{
 	margin-top: 20px;
 	cursor: pointer;
 }
-.text-hide{
+.text-hide,
+.text-more{
 	display: none;
 }
 .catalog_text{
