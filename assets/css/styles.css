@@ -1980,6 +1980,13 @@ html, body {
   margin-bottom: 10px;
 }
 
+.img__float {
+  float: right;
+  max-width: 100%;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+}
+
 .type {
   margin-top: 30px;
   display: -webkit-box;
@@ -7775,6 +7782,9 @@ html, body {
 @media screen and (max-width: 768px) {
   .container {
     max-width: 100%;
+  }
+  .img__float {
+    display: none;
   }
   .typeActive {
     margin-bottom: -20px;
