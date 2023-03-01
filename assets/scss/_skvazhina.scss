@@ -31,6 +31,7 @@
 			flex-direction: column;
 			gap: 20px;
 			height: auto;
+			margin-top: 10px;
 			&-item{
 				max-width: 505px;
 				width: 100%;
@@ -119,11 +120,11 @@
 		color: $paginat;
 		border: 2px solid $paginat;
 	}
-.textblock-wrap-container:nth-child(2){
+.textblock-wrap-container:nth-child(3){
 	flex-direction: row-reverse;
 	margin-top: 30px;
 	.textblock-wrap-container-list{
-		margin-top: 0;
+		margin-top: 10px;
 	}
 	.textblock-wrap-container-list-item{
 		flex-direction: row-reverse;
@@ -131,7 +132,7 @@
 		padding-right: 30px;
 	}
 }
-.textblock-wrap-container:nth-child(3){
+.textblock-wrap-container:nth-child(4){
 	margin-top: 30px;
 	.textblock-wrap-container-list{
 		margin-top: 10px;

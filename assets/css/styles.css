@@ -5890,6 +5890,7 @@ html, body {
           flex-direction: column;
   gap: 20px;
   height: auto;
+  margin-top: 10px;
 }
 
 .textblock-wrap-container-list-item {
@@ -6038,7 +6039,7 @@ html, body {
   border: 2px solid #2a447f;
 }
 
-.textblock-wrap-container:nth-child(2) {
+.textblock-wrap-container:nth-child(3) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -webkit-flex-direction: row-reverse;
@@ -6047,11 +6048,11 @@ html, body {
   margin-top: 30px;
 }
 
-.textblock-wrap-container:nth-child(2) .textblock-wrap-container-list {
-  margin-top: 0;
+.textblock-wrap-container:nth-child(3) .textblock-wrap-container-list {
+  margin-top: 10px;
 }
 
-.textblock-wrap-container:nth-child(2) .textblock-wrap-container-list-item {
+.textblock-wrap-container:nth-child(3) .textblock-wrap-container-list-item {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -webkit-flex-direction: row-reverse;
@@ -6061,11 +6062,11 @@ html, body {
   padding-right: 30px;
 }
 
-.textblock-wrap-container:nth-child(3) {
+.textblock-wrap-container:nth-child(4) {
   margin-top: 30px;
 }
 
-.textblock-wrap-container:nth-child(3) .textblock-wrap-container-list {
+.textblock-wrap-container:nth-child(4) .textblock-wrap-container-list {
   margin-top: 10px;
 }
 
@@ -7578,7 +7579,7 @@ html, body {
   .characteristic-wrap-list {
     max-width: 100%;
   }
-  .textblock-wrap-container, .textblock-wrap-container:nth-child(2), .textblock-wrap:nth-child(even) .textblock-wrap-container {
+  .textblock-wrap-container, .textblock-wrap-container:nth-child(3), .textblock-wrap:nth-child(4) .textblock-wrap-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -webkit-flex-direction: column-reverse;
@@ -7783,11 +7784,11 @@ html, body {
   .container {
     max-width: 100%;
   }
-  .img__float {
-    display: none;
-  }
   .typeActive {
     margin-bottom: -20px;
+  }
+  .img__float {
+    display: none;
   }
   .blockVisible {
     top: 0;
