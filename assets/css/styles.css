@@ -3221,7 +3221,9 @@ html, body {
 .hide3,
 .hide4,
 .hide5,
-.hide6 {
+.hide6,
+.hide7,
+.hide8 {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -3240,7 +3242,8 @@ html, body {
 .hide__btn,
 .hide2,
 .hide4,
-.hide6 {
+.hide6,
+.hide8 {
   display: none;
 }
 
@@ -3248,6 +3251,7 @@ html, body {
 .text-more,
 .text-hide2,
 .text-hide3,
+.text-hide4,
 .hide__block {
   display: none;
 }
@@ -6106,7 +6110,7 @@ html, body {
 }
 
 .ingener {
-  margin: 50px auto 0;
+  margin: 50px auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7803,17 +7807,6 @@ html, body {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .city-list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-            align-items: flex-start;
   }
   .type {
     -webkit-box-orient: vertical;

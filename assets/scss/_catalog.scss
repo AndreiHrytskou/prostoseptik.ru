@@ -468,7 +468,9 @@ input[type="range"]:active::-webkit-slider-thumb{
 .hide3,
 .hide4,
 .hide5,
-.hide6{
+.hide6,
+.hide7,
+.hide8{
 	@include fonts($roboto, 16px, 700, 16px, $dark_blue);
 	text-align: center;
 	letter-spacing: 0.03em;
@@ -481,13 +483,15 @@ input[type="range"]:active::-webkit-slider-thumb{
 .hide__btn,
 .hide2,
 .hide4,
-.hide6{
+.hide6,
+.hide8{
 	display: none;
 }
 .text-hide,
 .text-more,
 .text-hide2, 
 .text-hide3,
+.text-hide4,
 .hide__block{
 	display: none;
 }
