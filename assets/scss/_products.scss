@@ -267,7 +267,7 @@
 	&-list{
 			margin-block-start: 0;
 			padding-inline-start: 30px;
-			margin-bottom: 0px;
+			margin-bottom: 10px;
 			&-item{
 				@include fonts($roboto, 16px, 400, 24px, $dark_gray);
 				margin-bottom: 10px;
